@@ -2,11 +2,11 @@
 
 ## Purpose
 
-This page states what the repository proves and what it does not prove.
+This page states what the project defines and what the repository proves.
 
 ## Defined capabilities
 
-The repository defines these areas:
+The project defines these areas:
 
 - World regions, routes, tasks, and environmental rules.
 - Core characters, worldviews, strengths, blind spots, and relationship arcs.
@@ -32,6 +32,20 @@ It includes:
 - Five central characters.
 - Approximately 45 to 60 minutes of play.
 
+## Repository evidence
+
+The public repository contains:
+
+- Design and governance documentation.
+- Architecture decision records.
+- Source-traceability rules.
+- Concise source records.
+- Canonical package indexes.
+- Selected small canonical artifacts.
+- Documentation checks that use the shared writing profile.
+
+Large source decks and review exports require an approved large-file path before public publication.
+
 ## Unproven capabilities
 
 The repository does not prove these areas:
@@ -47,14 +61,8 @@ The repository does not prove these areas:
 - Multiplayer viability.
 - Commercial rights clearance.
 
-## Quality evidence
+## Public boundary
 
-The design package includes structured artifacts, source mapping, continuity rules, and review checklists.
+The repository excludes protected source copies and restricted visual references.
 
-These artifacts support prototype work. They do not replace playtesting or rights review.
-
-## Visibility recommendation
-
-Keep the repository private before rights review.
-
-A public repository must exclude protected source copies and unauthorized publisher material.
+The repository does not contain the uploaded memoir.

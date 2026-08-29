@@ -10,7 +10,7 @@ The project is not an authorized adaptation of Tara Westover's *Educated*.
 
 Tara Westover and the applicable rights holders retain all rights in *Educated*.
 
-The repository must not contain:
+The public repository must not contain:
 
 - The full book text.
 - An audiobook copy.
@@ -51,8 +51,10 @@ Do not use family violence, medical danger, or religious conflict as decorative 
 
 The player can use a content option without losing access to the story.
 
-## Repository visibility
+## Public repository boundary
 
-Keep this repository private before rights review.
+This repository is public and contains only approved project material and concise source records.
 
-A public version must remove protected source copies and restricted visual references.
+Keep restricted research material, protected source copies, and unreleased rights-sensitive assets outside this repository.
+
+A future visibility change does not remove the source-rights rules.
