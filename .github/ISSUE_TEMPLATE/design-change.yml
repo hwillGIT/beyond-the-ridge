@@ -1,0 +1,38 @@
+name: Design change
+description: Propose a change to a system, encounter, character, location, or artifact.
+title: "[Design] "
+labels: ["design"]
+body:
+  - type: textarea
+    id: conflict
+    attributes:
+      label: Conflict or need
+      description: State the design conflict or player need.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposed change
+      description: State the component, action, condition, and effect.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source relationship
+      description: Identify the source detail, transformation, and guardrail.
+    validations:
+      required: true
+  - type: checkboxes
+    id: review
+    attributes:
+      label: Review domains
+      options:
+        - label: Game design
+        - label: Narrative design
+        - label: Source fidelity
+        - label: Faith representation
+        - label: Accessibility
+        - label: Content care
+        - label: Rights and attribution

@@ -1,0 +1,54 @@
+name: Documentation quality
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - ".github/workflows/docs-quality.yml"
+  push:
+    branches: [main]
+    paths:
+      - "**/*.md"
+      - ".github/workflows/docs-quality.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  technical-prose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out this repository
+        uses: actions/checkout@v4
+
+      - name: Check out the canonical writing skill
+        uses: actions/checkout@v4
+        with:
+          repository: hwillGIT/library-of-context
+          path: .tooling/library-of-context
+          sparse-checkout: |
+            .agents/skills/write-timeless-technical-prose
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check Markdown prose
+        run: >-
+          python
+          .tooling/library-of-context/.agents/skills/write-timeless-technical-prose/scripts/check_technical_prose.py
+          README.md
+          AGENTS.md
+          CONTRIBUTING.md
+          GOVERNANCE.md
+          RIGHTS_AND_USE.md
+          ROADMAP.md
+          SECURITY.md
+          STATUS.md
+          docs
+          assets/README.md
+          packages
+          source/README.md
+          --profile
+          .tooling/library-of-context/.agents/skills/write-timeless-technical-prose/references/asd-ste100-software.yaml

@@ -1,0 +1,30 @@
+name: Source-fidelity question
+description: Record a question about a memoir detail or its transformation.
+title: "[Fidelity] "
+labels: ["fidelity"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source chapter or record
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: Source detail
+      description: Summarize the detail without a long quotation.
+    validations:
+      required: true
+  - type: textarea
+    id: transformation
+    attributes:
+      label: Proposed transformation
+    validations:
+      required: true
+  - type: textarea
+    id: guardrail
+    attributes:
+      label: Guardrail
+    validations:
+      required: true

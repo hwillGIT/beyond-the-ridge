@@ -1,0 +1,8 @@
+source_id,source,section,detail_category,source_note,game_transformation,rights_class,review_state
+EDU-001,Educated,Prologue,place,"Red railway car, mountain, valley, school bus","Opening overlook and map threshold",reference-only,reviewed
+EDU-002,Educated,Chapters 1-7,work,"Family labor, salvage risk, herbal care","Repair, hazard, and treatment systems",composite-influence,reviewed
+EDU-003,Educated,Chapters 8-9,performance,"Gas station lessons, church music, opera house","Town social access and performance play",composite-influence,reviewed
+EDU-004,Educated,Chapters 10-16,travel-and-danger,"Night driving, storms, horses, construction","Travel hazards and competing safety choices",composite-influence,reviewed
+EDU-005,Educated,Chapters 17-29,education,"BYU apartments, classes, labs, work, mentors","Capability growth and evidence systems",composite-influence,reviewed
+EDU-006,Educated,Chapters 30-35,cambridge,"Trinity, King's, libraries, lectures, supervision","Dense academic hub and source comparison",composite-influence,reviewed
+EDU-007,Educated,Chapters 36-40,return,"Harvard, return, family history, mountain perspective","Late-game authorship and return choices",composite-influence,reviewed
