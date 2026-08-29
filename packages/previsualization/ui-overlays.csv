@@ -1,0 +1,11 @@
+UI ID,Type,Text,Scene / Place,Placement,Behavior / Accessibility,Status
+U001,Objective,Feed the animals before sunrise,Red Car,top left,fade after barn task,Draft
+U002,Context,Climb down,ladder,near object / accessible echo,body orientation only,Draft
+U003,Intent,Ask about the phone,breakfast,lower right,natural pause; time continues lightly,Draft
+U004,Context,Inspect,hub,near hands,hide when camera leaves,Draft
+U005,Known Risk,Chain under tension,lift lane,top left,color + icon + text,Draft
+U006,Action,Hold to stabilize,load,lower center,toggle alternative available,Draft
+U007,Intent,Call clinic,Mercy House,lower right,does not announce outcome,Draft
+U008,Map Note,Nora’s 5 A.M. road,journal/map,handwritten layer,shows source of route,Draft
+U009,Journal,Saw / Heard / Concluded,night,full screen,earlier conclusions retained,Draft
+U010,Insight,Eliza avoids public disagreement,after supper,brief qualitative cue,stores only after enough observation,Draft

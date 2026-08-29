@@ -1,0 +1,19 @@
+Shot,Timecode,Title,Description,Dialogue / VO,UI,Audio,Source Anchor,Shot Type,Status
+1,0:00–0:04,Black / wind,Black screen. Wind pushes loose metal; distant school-bus brake squeal.,MARA VO: “Our road did not end at the mountain.”,none,"wind, metal tick, bus air brake",Prologue echo,Cinematic,Draft
+2,0:04–0:08,Red Car dawn,Mara stands on the Red Car. The bus passes below without stopping.,MARA VO: “It only stopped belonging to us.”,FEED THE ANIMALS BEFORE SUNRISE,"wind, ravens, diesel below",Prologue / Ch. 1,Gameplay,Draft
+3,0:08–0:12,Breakfast joke,Honey passes over the red-oak table. Abel controls the rhythm with a joke.,ABEL: “Reckon two dogs bite polite.”,PASS HONEY / ASK ABOUT PHONE,"spoon, plates, held laughter","Chs. 1, 7",Gameplay,Draft
+4,0:12–0:16,Book under elbow,A textbook corner disappears under Mara’s arm when Abel looks over.,ABEL: “Yard first.”,BOOK HIDDEN,room tone drops under line,Ch. 5,Hybrid,Draft
+5,0:16–0:20,Hairline crack,Mara rotates the hub; the chalk mark separates.,MARA: “The mark opens when it turns.”,INSPECT,"ratchet, engine idle","Chs. 6, 14",Gameplay,Draft
+6,0:20–0:24,Abel pressure,Abel’s hand enters frame; sun catches missing safety guard.,ABEL: “Loosen it.”,LOOSEN / CHECK MANUAL,chain creak,work logic,Gameplay,Draft
+7,0:24–0:28,Load slips,"Fast cut: hook shifts, load drops inches, Mara lunges.",ELI: “Mara!”,HOLD TO STABILIZE,"metal scream, breath",Chs. 6–7 transformed,Gameplay,Draft
+8,0:28–0:33,Mercy House,Ruth measures herbs; clinic number and phone sit in the same frame.,RUTH: “Tell me exactly what hurts.”,PREPARE / CALL CLINIC,"glass, mortar, phone click",Ch. 2,Gameplay,Draft
+9,0:33–0:38,Road threshold,Truck descends Bear River Hill analogue; town appears.,CALEB: “Seatbelt.” MARA: “You always say that.”,BUCKLE / REFUSE,"engine, CB static","Chs. 12, 19–21",Gameplay,Draft
+10,0:38–0:43,Fuel & Post,"Merritt’s sign, babysitting card, ordinance clipping, mail slots.",TOWN VOICES overlap: “Vale truck’s here.”,READ NOTICE,"door bell, local radio",Ch. 8 transformed,Gameplay,Draft
+11,0:43–0:48,Opera door,Warm light opens into dark wings and red seats.,PIANO / warm-up voices,ENTER / KEEP WALKING,"piano scale, stage rope",Chs. 8–9,Gameplay,Draft
+12,0:48–0:53,Radio signal,Needle spikes on Caleb’s receiver; lightning beyond ridge.,CALEB: “That’s not county dispatch.”,MARK SIGNAL,static pulse,original mystery,Gameplay,Draft
+13,0:53–0:59,Supper version,Abel tells the story; everyone knows where the laugh belongs.,ABEL: “Boy’s found a courtroom voice.”,JOIN / CORRECT,"laughter, fork scrape",Ch. 7 pattern,Gameplay,Draft
+14,0:59–1:05,Eliza line,Eliza does not look up.,ELIZA: “No. But people do.”,relationship cue only,music cuts out,sister pattern,Gameplay,Draft
+15,1:05–1:11,Journal columns,"Saw / Heard / Concluded. Earlier conclusion remains struck through, not erased.",MARA VO: “A story can hold you. So can a fact.”,WRITE,"pencil, house settle",memoir structure,Gameplay,Draft
+16,1:11–1:17,Nora map,A hand-drawn route labelled before sunrise slides across a table.,NORA: “Ready is a story people tell after they leave.”,TAKE MAP,paper fold,Ch. 1 transformed,Gameplay,Draft
+17,1:17–1:24,Ride toward ridge,Horse and rider cross high pasture; compound and town share horizon.,MARA VO: “I could learn the road without hating where it began.”,RIDE,"hoofbeats, wind",Ch. 39 echo,Gameplay,Draft
+18,1:24–1:30,Title / question,"Cut to black, then title over first sun on The Watcher.",TEXT: HOW FAR WILL YOU GO TO LEARN WHAT LIES BEYOND?,BEYOND THE RIDGE,single low string + wind,title,Gameplay,Draft

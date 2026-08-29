@@ -1,0 +1,27 @@
+Line ID,Speaker,Address State,Line,Register / Function,Audience,Memory / Object Anchor,Source Locator,Use,Status
+T001,Mara,VO,Our road did not end at the mountain.,reflective,none,Red Car / Peak,Prologue echo,trailer,Draft
+T002,Mara,VO,It only stopped belonging to us.,reflective,none,school bus / highway,Prologue echo,trailer,Draft
+T003,Abel,Dad / public,Town says three dogs is an emergency. Reckon two dogs bite polite.,kitchen joke,family table,dog ordinance / honey,Ch. 7 pattern,both,Draft
+T004,Ruth,Mara,"Mara, pass your dad the honey.",domestic redirect,family table,honey / pancakes,"Chs. 1, 7",both,Draft
+T005,Abel,girl / public,Yard first. That axle won’t mend itself while you read about dead men.,assignment / control,family table,hidden book / yard,Ch. 5 pattern,both,Draft
+T006,Mara,Dad,What did the caller want?,careful question,family table,lime-green phone,Ch. 2 pattern,gameplay,Draft
+T007,Ruth,Mara,Nothing that can’t wait until after breakfast.,placating concealment,family table,phone / work call,Ch. 2 pattern,gameplay,Draft
+T008,Mara,Abel,The mark opens when the hub turns.,work evidence,yard,chalk / hub,"Chs. 6, 14",both,Draft
+T009,Abel,none,Everything opens if you stare at it long enough. Loosen it.,worksite pressure,yard,sun / delay,father pattern,gameplay,Draft
+T010,Eli,Mara / Abel,She ain’t wrong. Chalk moved.,witness,yard,chalk,original witness,gameplay,Draft
+T011,Abel,boy / public,"Boy, I need hands, not a jury.",humiliation / command,yard,work vs testimony,family-work pattern,gameplay,Draft
+T012,Mara,Abel,Then give me sixty seconds and keep the jack still.,boundary / competence,yard,jack / time,original,gameplay,Draft
+T013,Ruth,patient,Tell me exactly what hurts.,medical precision,Mercy House,symptoms / herbs,Ch. 2 pattern,both,Draft
+T014,Caleb,Mara,Seatbelt.,ordinary safety,road,jeep / hill,Charles pattern,gameplay,Draft
+T015,Caleb,Mara,Town says your father drove a loader through a shed.,town gossip,road,post office / rumor,town pattern,gameplay,Draft
+T016,Mara,Caleb,Town says things because it has a post office and no hobbies.,dry humor,road,post office,original,gameplay,Draft
+T017,Caleb,Mara,What actually happened today?,plain care,road,accident rumor,Charles pattern,gameplay,Draft
+T018,Mara,Caleb,I know what the chain sounded like. I don’t know the rest yet.,sensory evidence / uncertainty,road,chain sound,memoir memory model,both,Draft
+T019,Abel,Eli / public,Load jumped because Eli moved like his britches were on fire.,folklore conversion,supper,casserole / belt joke,Ch. 7 pattern,gameplay,Draft
+T020,Eli,Abel,I was standing where you put me.,witness correction,supper,work assignment,original,gameplay,Draft
+T021,Abel,boy / public,Hear that? Boy’s found a courtroom voice.,public humiliation,supper,court / testimony,original,both,Draft
+T022,Ruth,family,Eat while it’s hot.,domestic redirect,supper,casserole,meal pattern,gameplay,Draft
+T023,Mara,family,The chalk line moved before Eli touched the chain.,one observed fact,supper,chalk evidence,memory system,both,Draft
+T024,Abel,girl / public,"Scrap don’t testify, girl.",authority over evidence,supper,scrap,father pattern,both,Draft
+T025,Eliza,family,No. But people do.,quiet intervention,supper,testimony,sister pattern,both,Draft
+T026,Nora,Mara,Ready is a story people tell after they leave.,blunt counsel,private,5 A.M. route / map,Ch. 1 transformed,trailer,Draft
