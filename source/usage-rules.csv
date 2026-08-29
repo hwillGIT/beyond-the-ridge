@@ -1,0 +1,21 @@
+Rule,Requirement,Implementation Note
+Source hierarchy,Book text is primary. Existing game bibles are secondary. New invention fills only gaps the book does not answer.,"When a detail conflicts, mark it rather than silently harmonizing it."
+Quote limit,"Use exact names, single words, short address terms, and brief fragments only. Dialogue in the game must be newly written.","No copied paragraphs, speeches, or recognizable scene transcripts."
+Dual naming,Keep columns for exact source name and working game analogue.,Classroom prototype may show source names; commercial build requires rights/trademark review.
+Voice over catchphrases,"Build speech from rhythm, grammar, subject matter, and avoidance patterns - not repeated quotations.",Abel should sound like himself even when discussing a new event.
+Pet-name state,"Every nickname records who says it, whether it is private/public, affectionate/controlling, and how its meaning changed.",A warm term can become unsafe; the game should remember context.
+Small talk carries lore,"Put history in jokes, errands, meals, and remembered objects instead of exposition dumps.",A belt joke can conceal a burn story; a doughnut can signal town belonging.
+Place before label,Show the location’s function and sensory pattern before a title card.,Let players see post office + gas station + dance room before naming the village center.
+Three source anchors per scene,"Each key scene should include at least three book-grounded details: one visual, one audio/sensory, one social/linguistic.",Then add one original game-specific layer so the scene is transformed.
+Religion is plural,"No visual or musical ‘villain motif’ for faith. Show service, choir, ritual, tenderness, pressure, uncertainty, and disagreement.",Abel’s interpretation is not the game’s definition of belief.
+Trauma is not mastery content,"Do not make players repeat abuse, chase perfect prevention, or earn bonuses for enduring harm.",Safety options preserve the story and carry no shame penalty.
+Memory preserves revision,"When the player changes a journal conclusion, retain a trace of the earlier wording.","Conflicting versions are gameplay, not errors to be instantly solved."
+Ordinary institutions have texture,"Hospitals, courthouses, buses, dorms, and libraries should contain invisible rules and helpful people as well as friction.",Avoid institution = salvation and family = ignorance binaries.
+Rural competence is real,"Tools, vehicles, weather, animals, and repair methods must function plausibly.",No ‘rustic aesthetic’ without task logic.
+Era accuracy,"Keep turn-of-the-millennium technology: dial-up, VCR cables, CB radio, early web, bulky camcorders, paper tests.","No smartphones, modern GPS UI, or contemporary slang unless later acts require them."
+Signage pass,Background signs must use source-aware names or approved fictional analogues.,"Storefronts, road signs, lecture halls, and campus maps are narrative surfaces."
+Conversation memory,NPCs should refer to prior shared events differently based on worldview and relationship state.,"The same accident may be ‘a miracle,’ ‘a shortcut,’ ‘bad luck,’ or ‘an unfiled incident.’"
+No omniscient consequence labels,"UI communicates current intent and known risk, never ‘This will betray your family +10.’","Behavior, access, tone, and later retellings carry consequence."
+Cultural review,"Indigenous stories, Mormon history, disability, rural life, medical care, race, and international settings require specialist review.",Source fidelity does not replace sensitivity or historical consultation.
+Canon lock,All new production uses Mara/Abel/Ruth/Jonah/Silas/Eliza/Nora/Caleb/Kline/Hale/Ortiz/Tess/Wade.,Legacy names in old decks should be patched before voice recording or animatic timing.
+Source logging,"Every approved line, prop, sign, or landmark gets a chapter/page locator in the production database.","This allows adaptation review, consistency checks, and legal review."
