@@ -9,6 +9,65 @@
 > The project draws thematic and environmental inspiration from Tara Westover's memoir *Educated*.
 > It is not an authorized adaptation.
 
+## Genesis: from literary assignment to playable world
+
+The project began as a high-school literary design assignment about *Educated*.
+
+The first goal was not to replay Tara Westover's life chapter by chapter.
+
+The design question was harder: how could the memoir's world become a compelling game for teenagers?
+
+Early discussion compared the desired experience with grounded narrative games such as *Red Dead Redemption* and *Life Is Strange*.
+
+*Red Dead Redemption* suggested physical work, exploration, landscape, travel, and a world that feels larger than the player.
+
+*Life Is Strange* suggested intimate relationships, conversation, consequence, memory, and choices that can remain emotionally unresolved.
+
+The project rejected cartoon styling, a direct chapter reenactment, and a story concerned only with reaching college.
+
+Instead, it kept recognizable literary DNA while creating an original playable world.
+
+The early design retained the mountain, homestead, scrapyard, rural town, theater, religious life, dangerous work, education, and contested memory.
+
+It transformed family figures into original characters with strengths, blind spots, fears, desires, worldviews, and gameplay functions.
+
+It also treated religion as part of character worldview and community life rather than a morality score.
+
+Characters do not wait in fixed locations to distribute quests.
+
+They can approach Mara while she repairs equipment, prepares remedies, drives, studies, rehearses, or explores.
+
+Each encounter should offer more than one reasonable action.
+
+The result can change practical safety, access, trust, respect, fear, loyalty, dependence, or clarity.
+
+The project also chose design before code.
+
+The World Bible, Character Bible, Art Bible, storyboards, keyframes, and animatic plans must prove the experience before engine production begins.
+
+As the design gained detail, the memoir became a reference for smaller forms of authenticity.
+
+These details include speech rhythms, family jokes, forms of address, food, work habits, roads, stores, theaters, campus spaces, and remembered objects.
+
+The game transforms these details into fictional equivalents when direct use would become imitation or create a rights concern.
+
+This approach keeps the project recognizably informed by *Educated* without turning it into a book report with buttons.
+
+### Original design questions
+
+These questions shaped the project and remain useful design tests:
+
+- Would a teenager who never read *Educated* still want to keep playing?
+- What does the player do from moment to moment besides select dialogue?
+- How can family pressure become gameplay rather than a sequence of cutscenes?
+- How can work reveal character, danger, competence, loyalty, and conflict at the same time?
+- How can belief shape perception without becoming a good-versus-bad religion meter?
+- How can each character's strengths and blind spots create different opportunities for the player?
+- How can conversations begin naturally while the player works, travels, studies, or explores?
+- How can a recognizable setting remain connected to the memoir without reenacting Tara's biography?
+- How can conflicting memories become an interactive system instead of an exposition device?
+- What must a visual prototype prove before the project writes gameplay code?
+
 ## Project summary
 
 The player controls Mara Vale, a teenager raised inside a remote mountain family economy near the turn of the millennium.
