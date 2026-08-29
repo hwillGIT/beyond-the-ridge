@@ -4,10 +4,21 @@
 
 Defines the basin, regions, routes, tasks, home hub, campaign scale, and prototype scope.
 
-## Canonical files
+## Canonical design source
 
-- Editable source: `01_Beyond_the_Ridge_World_Bible.pptx`
-- Review export: `01_Beyond_the_Ridge_World_Bible.pdf`
+`01_Beyond_the_Ridge_World_Bible.pptx`
+
+## Review export
+
+`01_Beyond_the_Ridge_World_Bible.pdf`
+
+## Repository state
+
+The binary source and PDF remain outside Git history.
+
+This directory is the stable repository address for the package.
+
+See [Artifact Catalog](../../ARTIFACT_CATALOG.md) for binary storage status.
 
 ## Change rule
 

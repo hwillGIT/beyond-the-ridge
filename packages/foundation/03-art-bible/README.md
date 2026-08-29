@@ -4,13 +4,18 @@
 
 Defines documentary western realism, lighting, materials, camera, sound, interface, accessibility, and visual targets.
 
-## Canonical files
+## Canonical design source
 
-- Editable source: `03_Beyond_the_Ridge_Art_Bible.pptx`
-- Review export: `03_Beyond_the_Ridge_Art_Bible.pdf`
+`03_Beyond_the_Ridge_Art_Bible.pptx`
 
-## Change rule
+## Review export
 
-Edit the source file first.
+`03_Beyond_the_Ridge_Art_Bible.pdf`
 
-Export a review file after the source passes design, fidelity, and content-care review.
+## Repository state
+
+The binary source and PDF remain outside Git history.
+
+The SVG files in `assets/previews/` are navigation graphics. They are not art-bible replacements.
+
+See [Artifact Catalog](../../ARTIFACT_CATALOG.md) for binary storage status.

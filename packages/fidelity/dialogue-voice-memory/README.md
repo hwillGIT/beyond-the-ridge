@@ -4,13 +4,24 @@
 
 Defines speech registers, forms of address, pet names, small-talk memories, dialogue rules, and original sample scenes.
 
-## Canonical files
+## Canonical design source
 
-- Editable source: `01_Beyond_the_Ridge_Dialogue_Voice_Memory_Bible_v1.pptx`
-- Review export: `01_Beyond_the_Ridge_Dialogue_Voice_Memory_Bible_v1.pdf`
+`01_Beyond_the_Ridge_Dialogue_Voice_Memory_Bible_v1.pptx`
 
-## Change rule
+## Repository mirror
 
-Edit the source file first.
+The public text mirror includes:
 
-Export a review file after the source passes design, fidelity, and content-care review.
+- `source/voice-profiles-family.csv`
+- `source/voice-profiles-world.csv`
+- `source/forms-of-address.csv`
+- `source/memory-triggers-01-18.csv`
+- `source/memory-triggers-19-36.csv`
+
+The source deck and PDF remain outside Git history.
+
+## Dialogue rule
+
+Write original dialogue.
+
+Use source details to inform rhythm, grammar, silence, subjects, memory, and social pressure.
