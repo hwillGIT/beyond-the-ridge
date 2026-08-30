@@ -19,6 +19,9 @@ The project defines these areas:
 - A gameplay interaction and HUD contract.
 - A controller and keyboard contract.
 - A feedback, scoring, capability, and relationship contract.
+- Expanded physical action, meaningful loss, persistent defeat, and optional permadeath.
+- A Persistence System with Redemption Windows, Second Roads, branch saves, and Legacy Chapters.
+- A 24-window redemption-seed ledger.
 - A 69-card game-design reference library.
 - A 90-second trailer edit specification.
 - A three-minute gameplay-preview edit specification.
@@ -28,7 +31,7 @@ The project defines these areas:
 
 The 12 cinematic keyframes prove setting, character, mood, and broad scene continuity.
 
-Eight additional UI proof frames now show interaction.
+Eight additional UI proof frames show interaction.
 
 The full-UI set covers:
 
@@ -46,12 +49,12 @@ The contextual-UI set covers:
 
 These frames show objectives, controls, known information, alternate actions, pressure, and feedback.
 
-Four low-UI frames remain to be generated:
+The next loss-state proof set covers:
 
-1. Ridge Dawn.
-2. Ridge Signal.
-3. College Threshold.
-4. Wider World.
+1. Engine-load imbalance.
+2. Rain-road crash.
+3. Ridge exposure.
+4. Wrong-accusation consequence and the hidden carbon-copy seed.
 
 The 90-second trailer and three-minute gameplay preview remain edit specifications.
 
@@ -72,6 +75,8 @@ It includes:
 - Five central characters.
 - Approximately 45 to 60 minutes of play.
 
+The first Persistence System proof adds selected ending scenes rather than a complete campaign.
+
 ## Repository evidence
 
 The public repository contains:
@@ -88,6 +93,10 @@ The public repository contains:
 - The gameplay interaction and HUD bible.
 - The control contract.
 - The gameplay feedback contract.
+- The loss-state contract.
+- The Redemption Windows and Second Roads Bible.
+- The 24-window Redemption Seed ledger.
+- The Persistence System prototype addendum.
 - The revised keyframe UI specification.
 - The 69-card design dataset.
 - Trailer and gameplay-preview edit specifications.
@@ -105,9 +114,13 @@ The repository does not prove these areas:
 - Engine performance.
 - Player movement quality.
 - Repair-system usability.
+- Heavy-load balance usability.
+- Vehicle-loss fairness.
+- Exposure-system readability.
+- Redemption Window discoverability.
+- Branch-save behavior.
 - HUD readability during active play.
 - Dialogue timing during active work.
-- Save-state behavior.
 - Animation quality.
 - Final voice performance.
 - Full campaign pacing.
