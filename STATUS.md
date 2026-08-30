@@ -21,30 +21,41 @@ The project defines these areas:
 - A feedback, scoring, capability, and relationship contract.
 - A 69-card game-design reference library.
 - A 90-second trailer edit specification.
-- A three-minute gameplay preview edit specification.
+- A three-minute gameplay-preview edit specification.
 - A youth engagement target loop, scorecard, and playtest protocol.
 
 ## Current visual production gate
 
-The existing 12 photoreal keyframes prove setting, character, and mood.
+The 12 cinematic keyframes prove setting, character, mood, and broad scene continuity.
 
-They do not yet prove player interaction.
+Eight additional UI proof frames now show interaction.
 
-The next pass must revise the keyframes so a viewer can identify:
-
-- The current task.
-- The controlled character.
-- The active tool or capability.
-- At least two possible actions.
-- The pressure or risk.
-- A visible consequence or state change.
-
-The first full-UI pass covers:
+The full-UI set covers:
 
 1. Hairline Crack.
 2. Suspended Load.
 3. Mercy House.
 4. Memory Journal.
+
+The contextual-UI set covers:
+
+1. Breakfast Pressure.
+2. County Road.
+3. Cedar Gate.
+4. Supper Version.
+
+These frames show objectives, controls, known information, alternate actions, pressure, and feedback.
+
+Four low-UI frames remain to be generated:
+
+1. Ridge Dawn.
+2. Ridge Signal.
+3. College Threshold.
+4. Wider World.
+
+The 90-second trailer and three-minute gameplay preview remain edit specifications.
+
+The repository does not yet contain final rendered MP4 files.
 
 ## Prototype target
 
@@ -71,6 +82,9 @@ The public repository contains:
 - Concise source records.
 - Forty chapter poster PNGs.
 - Twelve cinematic keyframe PNGs.
+- Four full-UI gameplay PNGs.
+- Four contextual-UI gameplay PNGs.
+- The visual-production roadmap PNG.
 - The gameplay interaction and HUD bible.
 - The control contract.
 - The gameplay feedback contract.
@@ -91,7 +105,7 @@ The repository does not prove these areas:
 - Engine performance.
 - Player movement quality.
 - Repair-system usability.
-- HUD readability during active work.
+- HUD readability during active play.
 - Dialogue timing during active work.
 - Save-state behavior.
 - Animation quality.
@@ -100,7 +114,7 @@ The repository does not prove these areas:
 - Multiplayer viability.
 - Commercial rights clearance.
 
-Rendered previsualization video does not prove engine behavior.
+Rendered previsualization video would not prove engine behavior.
 
 ## Public boundary
 
