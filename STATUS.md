@@ -15,7 +15,11 @@ The project defines these areas:
 - A core gameplay loop and its supporting systems.
 - An opening vertical slice with 28 storyboard panels.
 - Dialogue, forms of address, memory triggers, and place details.
-- A 90-second trailer plan and a three-minute gameplay animatic plan.
+- Twelve photoreal gameplay keyframes for Visual Proof of Play.
+- A 69-card game-design reference library.
+- A 90-second trailer edit specification.
+- A three-minute gameplay preview edit specification.
+- A youth engagement target loop, scorecard, and playtest protocol.
 
 ## Prototype target
 
@@ -40,6 +44,11 @@ The public repository contains:
 - Architecture decision records.
 - Source-traceability rules.
 - Concise source records.
+- Forty chapter poster PNGs.
+- Twelve gameplay keyframe PNGs.
+- The 69-card design dataset.
+- Trailer and gameplay-preview edit specifications.
+- Youth playtest gates and scorecards.
 - Canonical package indexes.
 - Selected small canonical artifacts.
 - Documentation checks that use the shared writing profile.
@@ -60,6 +69,8 @@ The repository does not prove these areas:
 - Full campaign pacing.
 - Multiplayer viability.
 - Commercial rights clearance.
+
+Rendered previsualization video does not prove engine behavior.
 
 ## Public boundary
 
