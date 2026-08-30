@@ -11,3 +11,4 @@ An architecture decision record states one durable design choice and its consequ
 - [ADR-0005: Faith as worldview and community](ADR-0005-faith-as-worldview-and-community.md)
 - [ADR-0006: Trauma-sensitive progression](ADR-0006-trauma-sensitive-progression.md)
 - [ADR-0007: Meaningful loss without punishing safety](ADR-0007-meaningful-loss-without-punishing-safety.md)
+- [ADR-0008: Persistence System and hidden Second Roads](ADR-0008-persistence-system-hidden-second-roads.md)
