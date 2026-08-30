@@ -15,13 +15,22 @@ The playable-vision package defines what the player does and how the world respo
 - [Adaptation Matrix](../../packages/playable-vision/adaptation-matrix/README.md)
 - [Gameplay Systems](../../packages/playable-vision/gameplay-systems/README.md)
 - [Opening Storyboard](../../packages/playable-vision/opening-storyboard/README.md)
+- [Gameplay Interaction and HUD Bible](GAMEPLAY_INTERACTION_AND_HUD_BIBLE.md)
+
+## Interaction source records
+
+These records support implementation and visual review.
+
+- [`source/control-contract.csv`](../../source/control-contract.csv)
+- [`source/gameplay-feedback-contract.csv`](../../source/gameplay-feedback-contract.csv)
+- [`source/gameplay-keyframe-ui-spec.csv`](../../source/gameplay-keyframe-ui-spec.csv)
 
 ## Core loop
 
 The game uses this loop:
 
 ```text
-Observe -> Work or Explore -> Disruption -> Choice -> Result -> Return Home -> Reconsider
+Notice -> Choose -> Act -> Interpret -> Return
 ```
 
 ## Prototype test
@@ -33,3 +42,4 @@ The opening prototype succeeds when:
 - Three approaches feel valid in each major encounter.
 - Relational consequences matter more than point totals.
 - The player understands what Mara saw, heard, and concluded.
+- A viewer can identify the task, controls, alternatives, pressure, and feedback from each gameplay frame.
