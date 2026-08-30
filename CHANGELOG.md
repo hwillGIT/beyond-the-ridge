@@ -19,6 +19,14 @@ This file records completed repository changes.
 - An Ending Archive and branch-save contract.
 - A Persistence System prototype addendum.
 - ADR-0008 for hidden Second Roads.
+- A Player Record, Mastery, History, and Legacy Bible.
+- Twelve-mark encounter scores and separate Canon Marks and Best Marks.
+- Capability proofs, tool familiarity, material progression, and map-knowledge states.
+- A Living History that preserves household, public, witness, and player accounts.
+- A Player Record implementation contract and Living History event schema.
+- An optional Journey Score and immutable Legacy Card.
+- A Player Record and Gamer Satisfaction prototype addendum.
+- ADR-0009 for layered score, Living History, and Legacy Cards.
 
 ## 2026-08-29
 
