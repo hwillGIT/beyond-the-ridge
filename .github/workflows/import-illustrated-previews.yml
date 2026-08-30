@@ -1,0 +1,73 @@
+name: Import illustrated preview PNGs
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  import-previews:
+    if: contains(github.event.head_commit.message, 'illustrated preview import')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download illustrated preview boards
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/previews
+          download() {
+            local url="$1"
+            local file="$2"
+            echo "Downloading $file"
+            curl -L --fail --retry 4 --retry-delay 2 --connect-timeout 20 --max-time 180 -o "assets/previews/$file" "$url"
+            file "assets/previews/$file" | grep -q 'PNG image data'
+          }
+          download 'https://at.adobe.com/l8BmSGXIUDgOXJ8T' 'character-cards.png'
+          download 'https://at.adobe.com/PxL6OemslQB2gbmr' 'world-overview.png'
+          download 'https://at.adobe.com/RECs3yA1TasWb3Bp' 'systems-overview.png'
+          download 'https://at.adobe.com/95OhaOGTSjcNnA5f' 'encounter-cards.png'
+          download 'https://at.adobe.com/P8nskEeUSyp4FQrs' 'worldview-cards.png'
+          download 'https://at.adobe.com/EEgCSxeXBabKMRoL' 'relationship-state-cards.png'
+          download 'https://at.adobe.com/S2E30PDB3Ic7VmDT' 'storyboard-overview.png'
+          test "$(find assets/previews -maxdepth 1 -type f -name '*.png' | wc -l)" -ge 7
+
+      - name: Remove legacy SVG previews
+        shell: bash
+        run: |
+          rm -f assets/previews/world-overview.svg
+          rm -f assets/previews/systems-overview.svg
+          rm -f assets/previews/storyboard-overview.svg
+
+      - name: Add preview index
+        shell: bash
+        run: |
+          cat > assets/previews/README.md <<'EOF'
+          # Illustrated Preview Boards
+
+          These PNG boards replace the former schematic SVG navigation graphics.
+
+          - `world-overview.png` presents the location card set.
+          - `systems-overview.png` presents the gameplay system card set.
+          - `storyboard-overview.png` presents the 12 gameplay keyframes.
+          - `character-cards.png` presents the core cast.
+          - `encounter-cards.png` presents representative playable encounters.
+          - `worldview-cards.png` presents the five worldview lenses.
+          - `relationship-state-cards.png` presents representative relationship states.
+
+          These boards are visual summaries. They do not override the canonical design bibles, source registers, or accepted decision records.
+          EOF
+
+      - name: Commit preview replacement
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/previews
+          git commit -m 'assets: replace SVG previews with illustrated PNG card boards'
+          git push
