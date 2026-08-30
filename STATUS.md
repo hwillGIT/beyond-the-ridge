@@ -49,12 +49,14 @@ The contextual-UI set covers:
 
 These frames show objectives, controls, known information, alternate actions, pressure, and feedback.
 
-The next loss-state proof set covers:
+The completed loss-state proof set covers:
 
 1. Engine-load imbalance.
 2. Rain-road crash.
 3. Ridge exposure.
 4. Wrong-accusation consequence and the hidden carbon-copy seed.
+
+Three Persistence System visual bibles and two review montages support the same design gate.
 
 The 90-second trailer and three-minute gameplay preview remain edit specifications.
 
@@ -89,6 +91,9 @@ The public repository contains:
 - Twelve cinematic keyframe PNGs.
 - Four full-UI gameplay PNGs.
 - Four contextual-UI gameplay PNGs.
+- Three Persistence System bible PNGs.
+- Four loss-scenario PNGs.
+- Two Persistence System review-montage PNGs.
 - The visual-production roadmap PNG.
 - The gameplay interaction and HUD bible.
 - The control contract.
@@ -105,7 +110,7 @@ The public repository contains:
 - Selected small canonical artifacts.
 - Documentation checks that use the shared writing profile.
 
-Large source decks and review exports require an approved large-file path before public publication.
+Large editable decks and long review exports require an approved large-file path before public publication.
 
 ## Unproven capabilities
 
