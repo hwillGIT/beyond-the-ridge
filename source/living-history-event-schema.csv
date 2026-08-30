@@ -1,0 +1,33 @@
+Field,Description,Player Visible,Primary Source,Example,Persistence Rule
+Event ID,Stable identifier for one resolved event,No,System,EVT-YARD-018,Never reused
+Branch ID,Save branch that owns the event,Only in Archive,System,BR-NIGHT-SHIFT-02,Links canon and Second Road histories
+Date and time,World date and approximate time,Yes,World clock,August 18 at 9:40 AM,Persists unless the calendar is intentionally approximate
+Location,Place where the event resolved,Yes,World state,Lower Salvage Yard,Links to map history
+Objective,What Mara was trying to accomplish,Yes,Quest state,Make the truck safe for the quarry run,Stores the final active wording
+Approach,Primary method chosen by the player,Yes,Action state,Careful diagnosis,Does not imply moral approval
+Tools and resources,Important equipment and resources used,Yes,Inventory and work state,Chalk jack manual and replacement bearing,Records consumed and surviving assets
+Witnesses,People who directly saw or heard part of the event,Yes when known,Encounter state,Eli Abel and Tess,Does not claim that each witness saw everything
+Mara saw,Direct observation and physical traces,Yes,Evidence system,Chalk line moved before Eli touched the chain,Preserves exact observation state
+Mara heard,Testimony rumor teaching or accusation,Yes,Dialogue and evidence systems,Abel said Eli caused the shift,Stores speaker and context
+Mara concluded,Current interpretation at event close,Yes,Journal,The chain had already begun to slip,Can be revised without deletion
+Mara revised,Later conclusion and reason,Yes,Journal revision,The damaged anchor may have started the movement,Preserves earlier conclusion
+Household account,Version repeated inside the Vale household,Yes after heard,Home consequence system,Eli moved under a stable load,Can harden or change through later scenes
+Public account,Official institutional or town version,Yes after known,Institution and rumor systems,No report filed,Can remain false or incomplete
+Evidence state,Support state for each claim,Yes,Journal,"Supported; disputed; incomplete; unverified; contradicted; revised",No hidden truth percentage
+Practical outcome,Material state at resolution,Yes,Encounter system,Temporary repair and delayed contract,Persists until changed through play
+Body outcome,Injury illness fatigue or impairment,Yes when Mara knows,Condition system,Eli shoulder injury,Persists with recovery rules
+Asset outcome,Condition of tools vehicles buildings or animals,Yes,Asset system,Truck serviceable but unverified,Persists and can worsen or recover
+Resource outcome,Cash credit fuel parts food medicine and time changes,Yes,Economy,Replacement bearing used and two hours lost,Persists in branch state
+Relationship milestones,Visible changes in relationship dimensions,Yes as qualitative events,Relationship system,Eliza repeated Mara's account in private,No raw numbers in normal play
+Promise changes,Promises created completed broken or disputed,Yes,Promise system,Quarry delivery promise broken,Persists until resolved or abandoned
+Access changes,Routes rooms institutions jobs or services opened or closed,Yes,World and institution systems,Cedar Gate credit becomes necessary,Persists until changed through play
+Score record,Canon Mark and encounter measures,Yes after resolution,Score system,Precision 3 Safety 2 Resourcefulness 3 Verification 1,Replay score stored separately
+Capability proof,Practice pressure transfer or verification proof earned,Yes,Mastery system,Repair verification proof incomplete,Contributes to capability tier
+Known causal links,Supported links to earlier or later events,Yes only after observable,History system,Temporary repair linked to later vibration,Never reveals future spoilers
+Loss classification,Encounter defeat persistent defeat campaign loss or none,Yes when resolved,Loss system,Persistent defeat,Controls save and recovery behavior
+Redemption Seed,Eligible seed identifier if one survives,Hidden until noticed,Persistence System,SEED-CARBON-COPY,Must have prior world evidence
+Second Road,Activated recovery branch if accepted,Yes after activation,Persistence System,The Second Record,Original loss remains canon
+Unresolved questions,Questions the player has not settled,Yes,Journal,Who moved the anchor before the lift,Can remain unresolved at ending
+Echo links,Later scenes that remember the event,Yes after they occur,Narrative system,Supper accusation and court hearing,Links without rewriting prior event
+Ending relevance,How the event contributes to ending or Legacy Card,Only after ending,Archive,Official account remained disputed,Immutable in completed Legacy Card
+Canonical status,Whether entry belongs to story canon replay or archived branch,Yes in Archive,System,"Canon; challenge replay; branch; Legacy Chapter",Challenge replay never rewrites canon
