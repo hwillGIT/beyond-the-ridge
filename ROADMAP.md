@@ -26,9 +26,16 @@
 
 ## Phase 4: Previsualization
 
-**State:** Planned in detail
+**State:** In production
 
-- Produce six consistent gameplay keyframes.
+- Maintain 12 cinematic keyframes for tone and continuity.
+- Maintain four full-UI interaction frames.
+- Maintain four contextual-UI interaction frames.
+- Produce four loss-state proof frames:
+  1. Engine-load imbalance.
+  2. Rain-road crash.
+  3. Ridge exposure.
+  4. Wrong-accusation consequence.
 - Record temporary voices.
 - Assemble a 90-second concept trailer.
 - Assemble a three-minute gameplay animatic.
@@ -36,18 +43,36 @@
 
 ## Phase 5: Interaction prototype
 
-**State:** Not started
+**State:** Specified, not implemented
 
 1. Select an engine and target platform.
 2. Build the family compound and salvage yard.
 3. Implement one repair interaction.
 4. Implement one dynamic hazard.
-5. Implement one conversation during work.
-6. Implement the memory journal.
-7. Implement one supper consequence scene.
-8. Run a 20-minute player test.
+5. Implement heavy-load balance and grip.
+6. Implement vehicle traction and loss.
+7. Implement ridge exposure and turn-back decisions.
+8. Implement one conversation during work.
+9. Implement the memory journal.
+10. Implement one supper consequence scene.
+11. Run a 20-minute player test.
 
-## Phase 6: Vertical slice
+## Phase 6: Persistence System proof
+
+**State:** Design complete, prototype not started
+
+- Implement a complete Apparent Ending.
+- Keep limited control during selected final scenes.
+- Implement dwell-focus activation.
+- Support 3-, 8-, and 15-second dwell settings.
+- Implement the Ending Archive and branch saves.
+- Prototype Night Shift.
+- Prototype The Second Record.
+- Prototype Different Hands.
+- Prototype What She Left.
+- Test whether the system feels hopeful rather than manipulative.
+
+## Phase 7: Vertical slice
 
 **State:** Not started
 
@@ -55,9 +80,10 @@
 - Add production animation and sound.
 - Add accessibility settings.
 - Add save and resume support.
+- Add persistent injuries and asset loss.
 - Run source-fidelity and content-care reviews.
 
-## Phase 7: Campaign decision
+## Phase 8: Campaign decision
 
 **State:** Not started
 
@@ -67,4 +93,4 @@ The team chooses one result:
 - Revise the concept and repeat the slice.
 - Stop the project and preserve the design record.
 
-The team must not begin full production before the vertical slice proves player interest, system clarity, and emotional coherence.
+The team must not begin full production before the vertical slice proves player interest, system clarity, emotional coherence, loss fairness, and Persistence System integrity.
