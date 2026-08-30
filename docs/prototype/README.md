@@ -4,13 +4,14 @@
 
 This directory defines the first playable proof of *Beyond the Ridge*.
 
-The prototype must prove player activity, choice, consequence, character pull, curiosity, danger, and meaningful loss before campaign expansion.
+The prototype must prove player activity, choice, consequence, character pull, curiosity, danger, meaningful loss, and credible persistence before campaign expansion.
 
 ## Files
 
 - `INTERACTION_PROTOTYPE_BLUEPRINT.md` defines the playable slice and system contract.
 - `CONTROL_AND_FEEDBACK_MODEL.md` defines player input, feedback, and interface rules.
 - `ACTION_AND_LOSS_PROTOTYPE_ADDENDUM.md` defines expanded physical-action tests, persistent defeat, encounter defeat, and difficulty simulations.
+- `PERSISTENCE_SYSTEM_PROTOTYPE_ADDENDUM.md` defines Redemption Window discovery, branch saves, recovery costs, and Second Road tests.
 - `prototype-test-matrix.csv` defines observable pass and fail signals for each prototype beat.
 
 ## Prototype boundary
@@ -21,8 +22,10 @@ It includes the family compound, salvage yard, Mercy House, county road, Cedar G
 
 College and Cambridge remain preview material until the opening loop proves itself.
 
+The first Persistence System proof uses selected ending scenes rather than a full campaign.
+
 ## Green-light rule
 
 Do not add campaign breadth because the prototype looks polished.
 
-Expand only when the prototype passes Hook, Agency, Activity Clarity, Character Pull, Curiosity, Consequence Legibility, Hazard Readability, and Loss Fairness with target youth reviewers.
+Expand only when the prototype passes Hook, Agency, Activity Clarity, Character Pull, Curiosity, Consequence Legibility, Hazard Readability, Loss Fairness, Redemption Causality, and Persistence Integrity with target youth reviewers.
