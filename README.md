@@ -1,6 +1,6 @@
 # Beyond the Ridge
 
-**A grounded, third-person narrative game concept about work, family, belief, memory, and the cost of choosing a wider world.**
+**A grounded, third-person narrative game concept about work, family, belief, memory, loss, and the cost of choosing a wider world.**
 
 ![Beyond the Ridge design overview](assets/previews/world-overview.png)
 
@@ -53,6 +53,16 @@ The game transforms these details into fictional equivalents when direct use wou
 
 This approach keeps the project recognizably informed by *Educated* without turning it into a book report with buttons.
 
+The design later added credible defeat, persistent loss, and the Persistence System.
+
+Selected losing endings can leave a hidden Redemption Window.
+
+A previously foreshadowed person, object, place, record, capability, or act of grace can open a Second Road.
+
+The original loss remains canon.
+
+The player must notice what survived, accept a recovery cost, and build another path inside the changed world.
+
 ### Original design questions
 
 These questions shaped the project and remain useful design tests:
@@ -67,6 +77,8 @@ These questions shaped the project and remain useful design tests:
 - How can a recognizable setting remain connected to the memoir without reenacting Tara's biography?
 - How can conflicting memories become an interactive system instead of an exposition device?
 - What must a visual prototype prove before the project writes gameplay code?
+- How can the player truly lose without making safety or accessibility the wrong choice?
+- How can hope survive a losing ending without erasing its consequence?
 
 ## Project summary
 
@@ -78,9 +90,17 @@ Each practical task changes a human situation. A fast repair can earn approval a
 
 A request for help can protect someone and expose a family secret.
 
+A mistake can destroy equipment, close a route, injure Mara, harm another person, or harden a false public account.
+
+Selected losses can contain a hidden Second Road, but no Second Road restores the original state for free.
+
 The project uses one central question:
 
 > How far will you go to learn what lies beyond the world you were given?
+
+The Persistence System adds a second question:
+
+> What can you still choose after the road you wanted is gone?
 
 ## Player experience
 
@@ -88,13 +108,17 @@ The game combines grounded action with social interpretation.
 
 The player can:
 
-- Repair, salvage, fabricate, and inspect machines.
+- Repair, salvage, fabricate, haul, rig, and inspect machines.
 - Cross mountain routes by foot, horse, and vehicle.
+- Manage grip, balance, fatigue, traction, weather, and physical risk.
 - Gather herbs and make care decisions with incomplete information.
 - Listen, observe, ask, challenge, deflect, remain silent, or leave.
 - Compare physical evidence, testimony, records, rumors, and memory.
+- Trespass, hide, surrender, flee, or accept legal consequences.
 - Return home and face consequences at breakfast, supper, and family work.
+- Suffer persistent injury, asset loss, missed opportunities, and relationship loss.
 - Develop mechanical skill, fieldcraft, observation, persuasion, history, self-direction, and collaboration.
+- Discover selected Redemption Windows and build Second Roads after major loss.
 
 The game has no morality bar.
 
@@ -108,6 +132,9 @@ Relationships track trust, respect, fear, loyalty, dependence, and clarity as se
 4. **Home is the consequence hub.** Choices return to the family table.
 5. **Every solution has a cost.** The interface does not promise a perfect outcome.
 6. **Curiosity opens the map.** Questions, trust, maps, and capability reveal new places.
+7. **Loss is real.** Injury, death, failed opportunities, and damaged records can persist.
+8. **Persistence is not an undo.** A Second Road preserves the loss and offers another form of agency.
+9. **Safety remains playable.** Leaving, calling for help, de-escalating, and using accessibility options do not close the story.
 
 ## Current project state
 
@@ -127,6 +154,8 @@ The repository does not contain a playable engine build.
 | Opening slice | Storyboarded | `packages/playable-vision/opening-storyboard/` |
 | Dialogue and memory | Defined | `packages/fidelity/dialogue-voice-memory/` |
 | Locations and routes | Defined | `packages/fidelity/location-route-memory/` |
+| Action and loss | Defined | `docs/design/ACTION_AND_LOSS_SYSTEMS.md` |
+| Persistence System | Defined | `packages/persistence/` |
 | Trailer and animatic | Planned | `packages/previsualization/` |
 | Engine prototype | Not started | See `ROADMAP.md` |
 
@@ -145,6 +174,7 @@ See [STATUS.md](STATUS.md) for scope limits and evidence.
 7. View the [worldview cards](assets/previews/worldview-cards.png).
 8. View the [relationship-state cards](assets/previews/relationship-state-cards.png).
 9. View the [gameplay keyframes](assets/previews/storyboard-overview.png).
+10. Read the [Persistence System Bible](docs/design/REDEMPTION_WINDOWS_AND_SECOND_ROADS_BIBLE.md).
 
 ### Design review
 
@@ -152,7 +182,9 @@ See [STATUS.md](STATUS.md) for scope limits and evidence.
 2. Review the World Bible, Character Bible, and Art Bible indexes.
 3. Review the Gameplay Systems index.
 4. Review the opening vertical-slice index.
-5. Record a durable design conflict in an architecture decision record.
+5. Review Action and Loss Systems.
+6. Review Redemption Windows and Second Roads.
+7. Record a durable design conflict in an architecture decision record.
 
 ### Source-fidelity review
 
@@ -167,6 +199,8 @@ See [STATUS.md](STATUS.md) for scope limits and evidence.
 2. Review the cuebook and animatic package index.
 3. Confirm character, location, prop, interface, and sound continuity.
 4. Test each sequence against the vertical-slice success criteria.
+5. Test loss-state frames for hazard readability and attributable failure.
+6. Test Redemption Windows for causality, accessibility, and persistence integrity.
 
 ## Repository map
 
@@ -175,7 +209,7 @@ See [STATUS.md](STATUS.md) for scope limits and evidence.
 ├── assets/                 Public navigation graphics and approved project visuals
 ├── docs/                   Design guides, decisions, glossary, and traceability
 ├── packages/               Canonical package indexes and approved repository artifacts
-├── source/                 Concise source records and transformation notes
+├── source/                 Concise source records and implementation contracts
 ├── .github/                Contribution templates and documentation checks
 ├── AGENTS.md               Rules for development agents and writing agents
 ├── CONTRIBUTING.md         Change process and review requirements
@@ -191,7 +225,7 @@ The project borrows thematic and environmental material from *Educated*.
 
 Recognizable anchors include the mountain, family labor, salvage work, herbal care, religious interpretation, performance, education, and contested memory.
 
-Names, mission plots, player choices, character biographies, dialogue, and game outcomes are original project material unless a source note states otherwise.
+Names, mission plots, player choices, character biographies, dialogue, game outcomes, loss systems, and Redemption Windows are original project material unless a source note states otherwise.
 
 The source register uses four labels:
 
@@ -213,6 +247,8 @@ Use private approved storage for restricted research material and unreleased sou
 Do not convert trauma into a reward loop, collectible, spectacle, or boss fight.
 
 Do not treat rural people or religious people as visual shorthand for ignorance or danger.
+
+Do not require Mara to restore an abusive relationship to unlock a Second Road.
 
 See [RIGHTS_AND_USE.md](RIGHTS_AND_USE.md) for the full boundary.
 
@@ -242,4 +278,4 @@ Link each change to a source, design principle, test, or decision record.
 
 Hubert Williams directs the concept and repository scope.
 
-The project uses separate reviews for design, source fidelity, accessibility, faith representation, content care, and rights.
+The project uses separate reviews for design, source fidelity, accessibility, faith representation, content care, loss fairness, persistence integrity, and rights.
