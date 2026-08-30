@@ -11,6 +11,7 @@ This directory contains approved project visuals and visual navigation aids.
 - `gameplay-ui/full-ui/` contains four interaction-dense gameplay proof frames.
 - `gameplay-ui/contextual-ui/` contains four lighter interface proof frames.
 - `persistence-system/` contains Redemption Windows bibles, review montages, and four loss-scenario concept frames.
+- `player-record-ui/` contains six Roadbook interface proofs and one overview montage.
 - `motion-studies/` contains previsualization motion tests and their indexes.
 - `previews/` contains card boards, overview boards, and the production-roadmap image.
 
@@ -20,7 +21,7 @@ A preview is not a canonical design source.
 
 Use the editable deck, spreadsheet, source record, or accepted decision for a design change.
 
-The gameplay UI and loss-scenario frames are previsualization targets.
+The gameplay, loss, and Player Record frames are previsualization targets.
 
 They do not represent a working engine build.
 
