@@ -31,7 +31,7 @@
 - Maintain 12 cinematic keyframes for tone and continuity.
 - Maintain four full-UI interaction frames.
 - Maintain four contextual-UI interaction frames.
-- Produce four loss-state proof frames:
+- Maintain four loss-state proof frames:
   1. Engine-load imbalance.
   2. Rain-road crash.
   3. Ridge exposure.
@@ -72,7 +72,25 @@
 - Prototype What She Left.
 - Test whether the system feels hopeful rather than manipulative.
 
-## Phase 7: Vertical slice
+## Phase 7: Player Record and gamer-satisfaction proof
+
+**State:** Design complete, prototype not started
+
+- Implement one twelve-mark encounter scorecard.
+- Preserve the story result as the Canon Mark.
+- Add one Challenge Board replay and Best Mark.
+- Implement Repair and Fieldcraft mastery proofs.
+- Implement one tool-familiarity change.
+- Build the six-tab Roadbook prototype.
+- Record one event with competing household and public accounts.
+- Add one supported causal link.
+- Add one map entry with a recorded source.
+- Add one relationship milestone.
+- Display an optional act Journey Score.
+- Generate one sample Legacy Card.
+- Test score fairness, mastery pull, history legibility, and replay interest.
+
+## Phase 8: Vertical slice
 
 **State:** Not started
 
@@ -81,9 +99,10 @@
 - Add accessibility settings.
 - Add save and resume support.
 - Add persistent injuries and asset loss.
+- Add the Player Record, Living History, and Challenge Board.
 - Run source-fidelity and content-care reviews.
 
-## Phase 8: Campaign decision
+## Phase 9: Campaign decision
 
 **State:** Not started
 
@@ -93,4 +112,4 @@ The team chooses one result:
 - Revise the concept and repeat the slice.
 - Stop the project and preserve the design record.
 
-The team must not begin full production before the vertical slice proves player interest, system clarity, emotional coherence, loss fairness, and Persistence System integrity.
+The team must not begin full production before the vertical slice proves player interest, system clarity, emotional coherence, loss fairness, Persistence System integrity, score fairness, history legibility, and replay value.
