@@ -44,6 +44,8 @@ Use chapter references and concise detail notes.
 | `gameplay-keyframe-ui-spec.csv` | Required controls, pressure, alternatives, and feedback for each keyframe |
 | `loss-state-contract.csv` | Encounter defeat, persistent defeat, campaign loss, and difficulty behavior |
 | `redemption-window-ledger.csv` | Twenty-four Redemption Seeds, activation rules, costs, losses, and Second Roads |
+| `player-record-contract.csv` | Score, mastery, map, relationship, archive, and Legacy Card behavior |
+| `living-history-event-schema.csv` | Event fields for competing accounts, causality, loss, branches, and endings |
 
 ## Register fields
 
