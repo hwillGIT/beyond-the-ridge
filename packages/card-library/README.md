@@ -33,6 +33,18 @@ Each card has:
 - A canonical anchor.
 - A visual asset when one exists.
 
+## Rendered preview boards
+
+- `assets/previews/character-cards.png`
+- `assets/previews/world-overview.png`
+- `assets/previews/systems-overview.png`
+- `assets/previews/encounter-cards.png`
+- `assets/previews/worldview-cards.png`
+- `assets/previews/relationship-state-cards.png`
+- `assets/previews/storyboard-overview.png`
+
+These images support rapid review. They do not replace the canonical records.
+
 ## Visual rule
 
 A rendered card uses one dominant image and no more than five short text blocks.

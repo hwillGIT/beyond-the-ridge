@@ -2,7 +2,7 @@
 
 **A grounded, third-person narrative game concept about work, family, belief, memory, and the cost of choosing a wider world.**
 
-![Beyond the Ridge design overview](assets/previews/world-overview.svg)
+![Beyond the Ridge design overview](assets/previews/world-overview.png)
 
 > [!IMPORTANT]
 > **Beyond the Ridge** is a provisional title for a classroom design exercise.
@@ -138,9 +138,13 @@ See [STATUS.md](STATUS.md) for scope limits and evidence.
 
 1. Read this page.
 2. Open the [project documentation](docs/README.md).
-3. View the [world overview](assets/previews/world-overview.svg).
-4. View the [systems overview](assets/previews/systems-overview.svg).
-5. View the [opening-slice overview](assets/previews/storyboard-overview.svg).
+3. View the [location cards](assets/previews/world-overview.png).
+4. View the [character cards](assets/previews/character-cards.png).
+5. View the [systems overview](assets/previews/systems-overview.png).
+6. View the [encounter cards](assets/previews/encounter-cards.png).
+7. View the [worldview cards](assets/previews/worldview-cards.png).
+8. View the [relationship-state cards](assets/previews/relationship-state-cards.png).
+9. View the [gameplay keyframes](assets/previews/storyboard-overview.png).
 
 ### Design review
 

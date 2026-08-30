@@ -12,7 +12,7 @@ Defines the first 35 to 45 minutes through 28 panels with camera, activity, dial
 
 - `source/opening-source-map-01-14.csv`
 - `source/opening-source-map-15-28.csv`
-- `assets/previews/storyboard-overview.svg`
+- `assets/previews/storyboard-overview.png`
 
 The source deck remains outside Git history because its current size exceeds the normal GitHub file limit.
 

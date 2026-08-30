@@ -12,7 +12,7 @@ Defines the core loop, repair, care, traversal, dialogue, evidence, relationship
 
 The binary source remains outside Git history.
 
-The systems overview in `assets/previews/systems-overview.svg` supports navigation only.
+The systems overview in `assets/previews/systems-overview.png` supports navigation only.
 
 See [Artifact Catalog](../../ARTIFACT_CATALOG.md) for binary storage status.
 
