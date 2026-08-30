@@ -22,6 +22,12 @@ The project defines these areas:
 - Expanded physical action, meaningful loss, persistent defeat, and optional permadeath.
 - A Persistence System with Redemption Windows, Second Roads, branch saves, and Legacy Chapters.
 - A 24-window redemption-seed ledger.
+- A layered Player Record with encounter marks, capability mastery, tool familiarity, and material progression.
+- A Living History with competing household, public, witness, and player accounts.
+- A Challenge Board that separates Canon Marks from Best Marks.
+- An optional 1,000-point Journey Score that does not function as morality.
+- An Ending Archive and immutable Legacy Card for each completed run.
+- A Living History event schema and Player Record implementation contract.
 - A 69-card game-design reference library.
 - A 90-second trailer edit specification.
 - A three-minute gameplay-preview edit specification.
@@ -58,6 +64,8 @@ The completed loss-state proof set covers:
 
 Three Persistence System visual bibles and two review montages support the same design gate.
 
+The Player Record, Living History, Challenge Board, Journey Score, and Legacy Card remain design specifications.
+
 The 90-second trailer and three-minute gameplay preview remain edit specifications.
 
 The repository does not yet contain final rendered MP4 files.
@@ -78,6 +86,8 @@ It includes:
 - Approximately 45 to 60 minutes of play.
 
 The first Persistence System proof adds selected ending scenes rather than a complete campaign.
+
+The first Player Record proof adds one encounter scorecard, two capability tracks, one history event, one replay challenge, one Journey Score, and one sample Legacy Card.
 
 ## Repository evidence
 
@@ -102,6 +112,11 @@ The public repository contains:
 - The Redemption Windows and Second Roads Bible.
 - The 24-window Redemption Seed ledger.
 - The Persistence System prototype addendum.
+- The Player Record, Mastery, History, and Legacy Bible.
+- The Player Record contract.
+- The Living History event schema.
+- The Player Record and Gamer Satisfaction prototype addendum.
+- ADR-0009 for layered score, Living History, and Legacy Cards.
 - The revised keyframe UI specification.
 - The 69-card design dataset.
 - Trailer and gameplay-preview edit specifications.
@@ -124,6 +139,15 @@ The repository does not prove these areas:
 - Exposure-system readability.
 - Redemption Window discoverability.
 - Branch-save behavior.
+- Encounter-score fairness during real play.
+- Capability progression pull.
+- Tool-familiarity readability.
+- Roadbook usability.
+- Living History legibility.
+- Canon Mark and Best Mark separation.
+- Journey Score interpretation.
+- Challenge Board replay interest.
+- Legacy Card value to players.
 - HUD readability during active play.
 - Dialogue timing during active work.
 - Animation quality.
