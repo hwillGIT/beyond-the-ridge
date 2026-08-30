@@ -17,6 +17,7 @@ The playable-vision package defines what the player does and how the world respo
 - [Opening Storyboard](../../packages/playable-vision/opening-storyboard/README.md)
 - [Gameplay Interaction and HUD Bible](GAMEPLAY_INTERACTION_AND_HUD_BIBLE.md)
 - [Action and Loss Systems](ACTION_AND_LOSS_SYSTEMS.md)
+- [Redemption Windows and Second Roads Bible](REDEMPTION_WINDOWS_AND_SECOND_ROADS_BIBLE.md)
 
 ## Interaction source records
 
@@ -26,8 +27,9 @@ These records support implementation and visual review.
 - [`source/gameplay-feedback-contract.csv`](../../source/gameplay-feedback-contract.csv)
 - [`source/gameplay-keyframe-ui-spec.csv`](../../source/gameplay-keyframe-ui-spec.csv)
 - [`source/loss-state-contract.csv`](../../source/loss-state-contract.csv)
+- [`source/redemption-window-ledger.csv`](../../source/redemption-window-ledger.csv)
 
-## Core loop
+## Core loops
 
 The game uses this loop:
 
@@ -39,6 +41,12 @@ The expanded action loop is:
 
 ```text
 Prepare -> Venture -> Work -> Survive disruption -> Decide -> Pay the cost -> Return -> Live with the result
+```
+
+The Persistence System uses this loop after selected losses:
+
+```text
+Lose -> Linger -> Notice -> Reach -> Accept the cost -> Repair what remains -> Choose a second road
 ```
 
 ## Prototype test
@@ -54,3 +62,4 @@ The opening prototype succeeds when:
 - Lethal and persistent risks are readable before failure.
 - A hard loss feels attributable rather than random.
 - A safe withdrawal remains a legitimate action.
+- A Redemption Window preserves the loss while offering a credible Second Road.
