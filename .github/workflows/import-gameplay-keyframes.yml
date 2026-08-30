@@ -1,0 +1,66 @@
+name: Import gameplay keyframe PNGs
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  import-keyframes:
+    if: contains(github.event.head_commit.message, 'chore: stage gameplay keyframe import')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download gameplay keyframes
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/gameplay-keyframes
+          download() {
+            local url="$1"
+            local file="$2"
+            curl -L --fail --retry 4 --retry-delay 2 --connect-timeout 20 --max-time 180 -o "assets/gameplay-keyframes/$file" "$url"
+            file "assets/gameplay-keyframes/$file" | grep -q 'PNG image data'
+          }
+          download 'https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:8fc7968d-7499-435b-8ed9-71af73ef5e3f' '01-ridge-dawn.png'
+          download 'https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:30a9e967-1ea2-407c-b94b-30bc2655c2fa' '02-breakfast-pressure.png'
+          download 'https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:f86552e0-d513-4849-9670-14cdf0f70e9f' '03-hairline-crack.png'
+          download 'https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:abb1105e-a7f0-4b39-97af-8129f73a8723' '04-suspended-load.png'
+          download 'https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:7fd691bb-3dea-43a9-b2e4-f9b96e9d4352' '05-mercy-house.png'
+          download 'https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:3e12e2e0-06e7-414f-acfe-926431fe9619' '06-county-road.png'
+          download 'https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:68f7059c-2fa8-4b09-b156-d40522fbb302' '07-cedar-gate.png'
+          download 'https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:0223944c-1e4f-465c-8992-528989921eb1' '08-supper-version.png'
+          download 'https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:1e96683f-53ec-41ef-913f-f4f6f0352f7e' '09-memory-journal.png'
+          download 'https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:701d66c1-497f-4050-8b62-4b2cbbeab6ef' '10-ridge-signal.png'
+          download 'https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:511df747-c44a-44fb-b9fe-17db4e2269a9' '11-college-threshold.png'
+          download 'https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:80990ec5-da7b-4246-9643-bacce3cdfe24' '12-wider-world.png'
+          test "$(find assets/gameplay-keyframes -maxdepth 1 -type f -name '*.png' | wc -l)" -eq 12
+
+      - name: Add keyframe index
+        shell: bash
+        run: |
+          cat > assets/gameplay-keyframes/README.md <<'EOF'
+          # Gameplay Keyframes
+
+          These 12 PNG images form the Visual Proof of Play set for *Beyond the Ridge*.
+
+          Each frame must show an activity, pressure, alternative action, and human consequence.
+
+          The images are previsualization targets. They do not represent an engine build.
+
+          See `docs/production/VISUAL_PROOF_OF_PLAY.md` for acceptance rules.
+          EOF
+
+      - name: Commit imported PNG files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/gameplay-keyframes
+          git commit -m 'assets: add 12 gameplay keyframe PNGs'
+          git push
