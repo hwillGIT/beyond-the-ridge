@@ -667,7 +667,7 @@ A keyframe fails when:
 
 The prototype must support:
 
-- Scalable text.
+- Adjustable text size.
 - Complete subtitles.
 - Speaker names.
 - High-contrast prompts.

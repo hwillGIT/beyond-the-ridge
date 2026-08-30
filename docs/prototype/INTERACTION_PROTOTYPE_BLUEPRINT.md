@@ -285,7 +285,7 @@ A review build should support rapid restart from each boundary.
 
 The first prototype must include:
 
-- scalable subtitles and interface text,
+- adjustable subtitle and interface text size,
 - speaker labels,
 - high-contrast interaction cues,
 - controller remapping,

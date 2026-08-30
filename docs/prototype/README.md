@@ -31,4 +31,6 @@ The first Player Record proof uses one scorecard, two capability tracks, one his
 
 Do not add campaign breadth because the prototype looks polished.
 
-Expand only when the prototype passes Hook, Agency, Activity Clarity, Character Pull, Curiosity, Consequence Legibility, Hazard Readability, Loss Fairness, Redemption Causality, Persistence Integrity, Score Fairness, Mastery Pull, History Legibility, and Replay Interest with target youth reviewers.
+Expand only when the prototype passes Hook, Agency, Activity Clarity, Character Pull, Curiosity, and Consequence Legibility.
+
+It must also pass Hazard Readability, Loss Fairness, Redemption Causality, Persistence Integrity, Score Fairness, Mastery Pull, History Legibility, and Replay Interest.

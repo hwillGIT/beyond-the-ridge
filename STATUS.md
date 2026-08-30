@@ -87,7 +87,9 @@ It includes:
 
 The first Persistence System proof adds selected ending scenes rather than a complete campaign.
 
-The first Player Record proof adds one encounter scorecard, two capability tracks, one history event, one replay challenge, one Journey Score, and one sample Legacy Card.
+The first Player Record proof adds one encounter scorecard, two capability tracks, and one history event.
+
+It also adds one replay challenge, one Journey Score, and one sample Legacy Card.
 
 ## Repository evidence
 

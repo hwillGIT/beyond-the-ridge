@@ -325,7 +325,9 @@ The project borrows thematic and environmental material from *Educated*.
 
 Recognizable anchors include the mountain, family labor, salvage work, herbal care, religious interpretation, performance, education, and contested memory.
 
-Names, mission plots, player choices, character biographies, dialogue, game outcomes, loss systems, Redemption Windows, scores, and player-record systems are original project material unless a source note states otherwise.
+Names, mission plots, player choices, character biographies, and dialogue are original project material.
+
+Game outcomes, loss systems, Redemption Windows, scores, and player-record systems are also original unless a source note states otherwise.
 
 The source register uses four labels:
 
@@ -380,4 +382,6 @@ Link each change to a source, design principle, test, or decision record.
 
 Hubert Williams directs the concept and repository scope.
 
-The project uses separate reviews for design, source fidelity, accessibility, faith representation, content care, loss fairness, persistence integrity, score fairness, history legibility, gamer satisfaction, and rights.
+The project uses separate reviews for design, source fidelity, accessibility, faith representation, content care, and rights.
+
+It also reviews loss fairness, persistence integrity, score fairness, history legibility, and gamer satisfaction.

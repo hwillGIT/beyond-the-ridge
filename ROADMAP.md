@@ -112,4 +112,6 @@ The team chooses one result:
 - Revise the concept and repeat the slice.
 - Stop the project and preserve the design record.
 
-The team must not begin full production before the vertical slice proves player interest, system clarity, emotional coherence, loss fairness, Persistence System integrity, score fairness, history legibility, and replay value.
+The team must not begin full production before the vertical slice proves player interest, system clarity, and emotional coherence.
+
+The slice must also prove loss fairness, Persistence System integrity, score fairness, history legibility, and replay value.
