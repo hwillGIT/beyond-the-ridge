@@ -10,6 +10,7 @@ This directory contains the editable design sources and their review exports.
 - `previsualization/` defines the trailer and gameplay animatic.
 - `card-library/` defines the modular design-card dataset.
 - `persistence/` defines Redemption Windows, Second Roads, and the Persistence System review path.
+- `player-record/` defines score, mastery, Living History, challenge replay, Journey Score, and Legacy Cards.
 
 ## Source rule
 
