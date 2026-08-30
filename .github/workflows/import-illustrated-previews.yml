@@ -1,4 +1,4 @@
-name: Import illustrated preview PNGs
+name: Refresh illustrated preview links
 
 on:
   push:
@@ -8,66 +8,52 @@ permissions:
   contents: write
 
 jobs:
-  import-previews:
-    if: contains(github.event.head_commit.message, 'illustrated preview import')
+  refresh-links:
+    if: contains(github.event.head_commit.message, 'refresh illustrated preview links')
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Download illustrated preview boards
+      - name: Replace legacy SVG references
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p assets/previews
-          download() {
-            local url="$1"
-            local file="$2"
-            echo "Downloading $file"
-            curl -L --fail --retry 4 --retry-delay 2 --connect-timeout 20 --max-time 180 -o "assets/previews/$file" "$url"
-            file "assets/previews/$file" | grep -q 'PNG image data'
-          }
-          download 'https://at.adobe.com/l8BmSGXIUDgOXJ8T' 'character-cards.png'
-          download 'https://at.adobe.com/PxL6OemslQB2gbmr' 'world-overview.png'
-          download 'https://at.adobe.com/RECs3yA1TasWb3Bp' 'systems-overview.png'
-          download 'https://at.adobe.com/95OhaOGTSjcNnA5f' 'encounter-cards.png'
-          download 'https://at.adobe.com/P8nskEeUSyp4FQrs' 'worldview-cards.png'
-          download 'https://at.adobe.com/EEgCSxeXBabKMRoL' 'relationship-state-cards.png'
-          download 'https://at.adobe.com/S2E30PDB3Ic7VmDT' 'storyboard-overview.png'
-          test "$(find assets/previews -maxdepth 1 -type f -name '*.png' | wc -l)" -ge 7
+          sed -i 's#assets/previews/world-overview\.svg#assets/previews/world-overview.png#g' README.md
+          sed -i 's#assets/previews/systems-overview\.svg#assets/previews/systems-overview.png#g' README.md
+          sed -i 's#assets/previews/storyboard-overview\.svg#assets/previews/storyboard-overview.png#g' README.md
+          sed -i 's#assets/previews/systems-overview\.svg#assets/previews/systems-overview.png#g' packages/playable-vision/gameplay-systems/README.md
+          sed -i 's#assets/previews/storyboard-overview\.svg#assets/previews/storyboard-overview.png#g' packages/playable-vision/opening-storyboard/README.md
 
-      - name: Remove legacy SVG previews
+      - name: Add illustrated card-board links
         shell: bash
         run: |
-          rm -f assets/previews/world-overview.svg
-          rm -f assets/previews/systems-overview.svg
-          rm -f assets/previews/storyboard-overview.svg
+          python - <<'PY'
+          from pathlib import Path
 
-      - name: Add preview index
-        shell: bash
-        run: |
-          cat > assets/previews/README.md <<'EOF'
-          # Illustrated Preview Boards
+          root = Path('README.md')
+          text = root.read_text()
+          old = """3. View the [world overview](assets/previews/world-overview.png).\n4. View the [systems overview](assets/previews/systems-overview.png).\n5. View the [opening-slice overview](assets/previews/storyboard-overview.png)."""
+          new = """3. View the [location cards](assets/previews/world-overview.png).\n4. View the [character cards](assets/previews/character-cards.png).\n5. View the [systems overview](assets/previews/systems-overview.png).\n6. View the [encounter cards](assets/previews/encounter-cards.png).\n7. View the [worldview cards](assets/previews/worldview-cards.png).\n8. View the [relationship-state cards](assets/previews/relationship-state-cards.png).\n9. View the [gameplay keyframes](assets/previews/storyboard-overview.png)."""
+          if old in text:
+              text = text.replace(old, new)
+          root.write_text(text)
 
-          These PNG boards replace the former schematic SVG navigation graphics.
+          card = Path('packages/card-library/README.md')
+          text = card.read_text()
+          marker = "## Visual rule\n"
+          block = """## Rendered preview boards\n\n- `assets/previews/character-cards.png`\n- `assets/previews/world-overview.png`\n- `assets/previews/systems-overview.png`\n- `assets/previews/encounter-cards.png`\n- `assets/previews/worldview-cards.png`\n- `assets/previews/relationship-state-cards.png`\n- `assets/previews/storyboard-overview.png`\n\nThese images support rapid review. They do not replace the canonical records.\n\n"""
+          if block not in text and marker in text:
+              text = text.replace(marker, block + marker)
+          card.write_text(text)
+          PY
 
-          - `world-overview.png` presents the location card set.
-          - `systems-overview.png` presents the gameplay system card set.
-          - `storyboard-overview.png` presents the 12 gameplay keyframes.
-          - `character-cards.png` presents the core cast.
-          - `encounter-cards.png` presents representative playable encounters.
-          - `worldview-cards.png` presents the five worldview lenses.
-          - `relationship-state-cards.png` presents representative relationship states.
-
-          These boards are visual summaries. They do not override the canonical design bibles, source registers, or accepted decision records.
-          EOF
-
-      - name: Commit preview replacement
+      - name: Commit documentation refresh
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/previews
-          git commit -m 'assets: replace SVG previews with illustrated PNG card boards'
+          git add README.md packages/playable-vision/gameplay-systems/README.md packages/playable-vision/opening-storyboard/README.md packages/card-library/README.md
+          git commit -m 'docs: point reviews to illustrated PNG boards'
           git push
