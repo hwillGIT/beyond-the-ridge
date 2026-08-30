@@ -1,0 +1,78 @@
+name: Fix player-record documentation quality
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  fix-prose:
+    if: contains(github.event.head_commit.message, 'stage documentation quality fixes')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Apply exact prose corrections
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          replacements = {
+              "README.md": [
+                  (
+                      "Names, mission plots, player choices, character biographies, dialogue, game outcomes, loss systems, Redemption Windows, scores, and player-record systems are original project material unless a source note states otherwise.",
+                      "Names, mission plots, player choices, character biographies, and dialogue are original project material.\n\nGame outcomes, loss systems, Redemption Windows, scores, and player-record systems are also original unless a source note states otherwise.",
+                  ),
+                  (
+                      "The project uses separate reviews for design, source fidelity, accessibility, faith representation, content care, loss fairness, persistence integrity, score fairness, history legibility, gamer satisfaction, and rights.",
+                      "The project uses separate reviews for design, source fidelity, accessibility, faith representation, content care, and rights.\n\nIt also reviews loss fairness, persistence integrity, score fairness, history legibility, and gamer satisfaction.",
+                  ),
+              ],
+              "ROADMAP.md": [
+                  (
+                      "The team must not begin full production before the vertical slice proves player interest, system clarity, emotional coherence, loss fairness, Persistence System integrity, score fairness, history legibility, and replay value.",
+                      "The team must not begin full production before the vertical slice proves player interest, system clarity, and emotional coherence.\n\nThe slice must also prove loss fairness, Persistence System integrity, score fairness, history legibility, and replay value.",
+                  ),
+              ],
+              "STATUS.md": [
+                  (
+                      "The first Player Record proof adds one encounter scorecard, two capability tracks, one history event, one replay challenge, one Journey Score, and one sample Legacy Card.",
+                      "The first Player Record proof adds one encounter scorecard, two capability tracks, and one history event.\n\nIt also adds one replay challenge, one Journey Score, and one sample Legacy Card.",
+                  ),
+              ],
+              "docs/design/GAMEPLAY_INTERACTION_AND_HUD_BIBLE.md": [
+                  ("- Scalable text.", "- Adjustable text size."),
+              ],
+              "docs/prototype/INTERACTION_PROTOTYPE_BLUEPRINT.md": [
+                  ("- scalable subtitles and interface text,", "- adjustable subtitle and interface text size,"),
+              ],
+              "docs/prototype/README.md": [
+                  (
+                      "Expand only when the prototype passes Hook, Agency, Activity Clarity, Character Pull, Curiosity, Consequence Legibility, Hazard Readability, Loss Fairness, Redemption Causality, Persistence Integrity, Score Fairness, Mastery Pull, History Legibility, and Replay Interest with target youth reviewers.",
+                      "Expand only when the prototype passes Hook, Agency, Activity Clarity, Character Pull, Curiosity, and Consequence Legibility.\n\nIt must also pass Hazard Readability, Loss Fairness, Redemption Causality, Persistence Integrity, Score Fairness, Mastery Pull, History Legibility, and Replay Interest.",
+                  ),
+              ],
+          }
+
+          for filename, pairs in replacements.items():
+              path = Path(filename)
+              text = path.read_text(encoding="utf-8")
+              for old, new in pairs:
+                  if old not in text:
+                      raise SystemExit(f"Expected text not found in {filename}: {old}")
+                  text = text.replace(old, new, 1)
+              path.write_text(text, encoding="utf-8")
+          PY
+
+      - name: Commit corrections
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md ROADMAP.md STATUS.md docs/design/GAMEPLAY_INTERACTION_AND_HUD_BIBLE.md docs/prototype/INTERACTION_PROTOTYPE_BLUEPRINT.md docs/prototype/README.md
+          git commit -m 'docs: satisfy timeless technical prose checks'
+          git push
