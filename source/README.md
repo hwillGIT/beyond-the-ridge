@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This directory records source relationships without storing protected source copies.
+This directory records source relationships and implementation contracts without storing protected source copies.
 
 ## Primary source
 
@@ -16,7 +16,7 @@ Do not commit an audiobook, page scan, publisher image, or long quotation.
 
 Use chapter references and concise detail notes.
 
-## Files
+## Source and fidelity files
 
 | File | Purpose |
 |---|---|
@@ -35,6 +35,16 @@ Use chapter references and concise detail notes.
 | `opening-source-map-15-28.csv` | Source details for opening beats 15 through 28 |
 | `usage-rules.csv` | Rules for source use, transformation, dialogue, and review |
 
+## Gameplay implementation records
+
+| File | Purpose |
+|---|---|
+| `control-contract.csv` | Stable controller and keyboard meanings |
+| `gameplay-feedback-contract.csv` | Practical, capability, evidence, relationship, and work-mastery feedback |
+| `gameplay-keyframe-ui-spec.csv` | Required controls, pressure, alternatives, and feedback for each keyframe |
+| `loss-state-contract.csv` | Encounter defeat, persistent defeat, campaign loss, and difficulty behavior |
+| `redemption-window-ledger.csv` | Twenty-four Redemption Seeds, activation rules, costs, losses, and Second Roads |
+
 ## Register fields
 
 A source record can identify:
@@ -47,8 +57,19 @@ A source record can identify:
 - A rights class.
 - A review state.
 
+An implementation record can identify:
+
+- An input or state.
+- A player-facing result.
+- A hidden system rule.
+- An accessibility requirement.
+- A persistent consequence.
+- A review or test condition.
+
 ## Use rule
 
-Treat these records as adaptation notes, not as substitute copies of the memoir.
+Treat source records as adaptation notes, not as substitute copies of the memoir.
 
 Write original game dialogue and original mission structure.
+
+Treat implementation records as design contracts until an engine prototype validates or revises them.
