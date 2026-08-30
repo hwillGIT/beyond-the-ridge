@@ -21,6 +21,8 @@ The repository includes these approved PNG sets:
 - [Twelve cinematic keyframes](../../assets/gameplay-keyframes/).
 - [Four full-UI gameplay frames](../../assets/gameplay-ui/full-ui/).
 - [Four contextual-UI gameplay frames](../../assets/gameplay-ui/contextual-ui/).
+- [Persistence System visual bibles and loss scenarios](../../assets/persistence-system/).
+- [Player Record and Roadbook UI proof set](../../assets/player-record-ui/).
 - [Character card board](../../assets/previews/character-cards.png).
 - [Encounter card board](../../assets/previews/encounter-cards.png).
 - [Worldview card board](../../assets/previews/worldview-cards.png).
@@ -30,9 +32,24 @@ The repository includes these approved PNG sets:
 
 The cinematic keyframes establish tone and continuity.
 
-The UI proof frames establish task clarity, available actions, pressure, known information, and consequence feedback.
+The gameplay frames establish task clarity, available actions, pressure, known information, and consequence feedback.
 
-Four low-UI proof frames remain to be generated for Ridge Dawn, Ridge Signal, College Threshold, and Wider World.
+The Player Record set establishes score, mastery, replay, history, act summary, and campaign legacy.
+
+Four low-UI proof frames remain for Ridge Dawn, Ridge Signal, College Threshold, and Wider World.
+
+## Player Record UI proof
+
+The [Player Record UI proof set](PLAYER_RECORD_UI_PROOF_SET.md) defines the review purpose for all six screens.
+
+The set includes:
+
+1. Encounter scorecard.
+2. Capability mastery.
+3. Living History.
+4. Challenge Board.
+5. Journey Score.
+6. Legacy Card.
 
 ## Visual continuity
 
@@ -63,7 +80,7 @@ Show the player's available action before showing a consequence.
 
 Do not display a morality bar or relationship hearts.
 
-Relationship feedback must describe distinct states such as trust, respect, fear, dependence, and clarity.
+Relationship feedback must describe trust, respect, fear, dependence, and clarity as separate states.
 
 ## Review gates
 
@@ -72,8 +89,11 @@ The team reviews:
 1. Character continuity.
 2. Location continuity.
 3. Gameplay readability.
-4. Source fidelity.
-5. Content care.
-6. Accessibility.
-7. Youth engagement.
-8. Rights and attribution.
+4. Score fairness.
+5. History legibility.
+6. Replay pull.
+7. Source fidelity.
+8. Content care.
+9. Accessibility.
+10. Youth engagement.
+11. Rights and attribution.
