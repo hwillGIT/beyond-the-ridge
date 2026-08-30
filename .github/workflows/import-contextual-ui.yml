@@ -1,0 +1,109 @@
+name: Import contextual gameplay UI and roadmap
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  import-assets:
+    if: contains(github.event.head_commit.message, 'stage contextual UI import')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download approved PNG assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/gameplay-ui/contextual-ui assets/previews
+
+          download_png() {
+            local url="$1"
+            local path="$2"
+            echo "Downloading ${path}"
+            curl -L --fail --retry 4 --retry-delay 2 --connect-timeout 20 --max-time 180 -o "$path" "$url"
+            file "$path" | grep -q 'PNG image data'
+          }
+
+          download_png 'https://at.adobe.com/kJVaGpZaFwNGGW5R' 'assets/gameplay-ui/contextual-ui/02-breakfast-pressure-context-ui.png'
+          download_png 'https://at.adobe.com/la38i8Q2ASqYUmsR' 'assets/gameplay-ui/contextual-ui/06-county-road-context-ui.png'
+          download_png 'https://at.adobe.com/tXP3hTDfCW0AuSD7' 'assets/gameplay-ui/contextual-ui/07-cedar-gate-context-ui.png'
+          download_png 'https://at.adobe.com/9XhadXgdehUidkU4' 'assets/gameplay-ui/contextual-ui/08-supper-version-context-ui.png'
+          download_png 'https://at.adobe.com/ZD6WgL0QmxFfJnvX' 'assets/previews/production-roadmap.png'
+
+          test "$(find assets/gameplay-ui/contextual-ui -maxdepth 1 -type f -name '*.png' | wc -l)" -eq 4
+
+      - name: Add asset indexes
+        shell: bash
+        run: |
+          cat > assets/gameplay-ui/contextual-ui/README.md <<'EOF'
+          # Contextual Gameplay UI Frames
+
+          These PNG frames show interface behavior during social, traversal, town, and return-home scenes.
+
+          1. `02-breakfast-pressure-context-ui.png` shows live conversation intent during a family meal.
+          2. `06-county-road-context-ui.png` shows driving, route, weather, fuel, rumor, and mobile-dialogue information.
+          3. `07-cedar-gate-context-ui.png` shows exploration prompts, town activity, parts objectives, and rumor collection.
+          4. `08-supper-version-context-ui.png` shows the return-home consequence choice and relationship-state feedback.
+
+          These images are previsualization targets. They do not represent an engine build.
+          EOF
+
+          cat > assets/gameplay-ui/README.md <<'EOF'
+          # Gameplay UI Proof Frames
+
+          This directory contains interaction-focused gameplay previsualization.
+
+          ## Full UI
+
+          The `full-ui` set proves control, task clarity, alternatives, pressure, and feedback for four complex systems:
+
+          1. Hairline Crack repair.
+          2. Suspended Load danger response.
+          3. Mercy House care and referral.
+          4. Memory Journal evidence review.
+
+          ## Contextual UI
+
+          The `contextual-ui` set proves that lighter interface layers can support live scenes without turning them into cutscenes:
+
+          1. Breakfast Pressure.
+          2. County Road.
+          3. Cedar Gate.
+          4. Supper Version.
+
+          These images are visual design targets. They do not represent an engine build.
+
+          See `docs/design/GAMEPLAY_INTERACTION_AND_HUD_BIBLE.md` for the interaction contract.
+          EOF
+
+          cat > assets/previews/README.md <<'EOF'
+          # Illustrated Preview Boards
+
+          These PNG boards replace the former schematic SVG navigation graphics.
+
+          - `world-overview.png` presents the location card set.
+          - `systems-overview.png` presents the gameplay system card set.
+          - `storyboard-overview.png` presents the 12 gameplay keyframes.
+          - `character-cards.png` presents the core cast.
+          - `encounter-cards.png` presents representative playable encounters.
+          - `worldview-cards.png` presents the five worldview lenses.
+          - `relationship-state-cards.png` presents representative relationship states.
+          - `production-roadmap.png` presents the visual-production sequence from keyframes through youth review.
+
+          These boards are visual summaries. They do not override the canonical design bibles, source registers, or accepted decision records.
+          EOF
+
+      - name: Commit imported assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/gameplay-ui assets/previews/README.md assets/previews/production-roadmap.png
+          git commit -m 'assets: add contextual gameplay UI and production roadmap'
+          git push
