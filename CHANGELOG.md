@@ -27,6 +27,9 @@ This file records completed repository changes.
 - An optional Journey Score and immutable Legacy Card.
 - A Player Record and Gamer Satisfaction prototype addendum.
 - ADR-0009 for layered score, Living History, and Legacy Cards.
+- Six Player Record and Roadbook UI proof screens.
+- One Player Record UI overview montage.
+- A production review guide for score, mastery, history, replay, Journey Score, and Legacy Card interfaces.
 
 ## 2026-08-29
 
