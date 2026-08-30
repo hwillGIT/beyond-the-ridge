@@ -16,6 +16,7 @@ The playable-vision package defines what the player does and how the world respo
 - [Gameplay Systems](../../packages/playable-vision/gameplay-systems/README.md)
 - [Opening Storyboard](../../packages/playable-vision/opening-storyboard/README.md)
 - [Gameplay Interaction and HUD Bible](GAMEPLAY_INTERACTION_AND_HUD_BIBLE.md)
+- [Action and Loss Systems](ACTION_AND_LOSS_SYSTEMS.md)
 
 ## Interaction source records
 
@@ -24,6 +25,7 @@ These records support implementation and visual review.
 - [`source/control-contract.csv`](../../source/control-contract.csv)
 - [`source/gameplay-feedback-contract.csv`](../../source/gameplay-feedback-contract.csv)
 - [`source/gameplay-keyframe-ui-spec.csv`](../../source/gameplay-keyframe-ui-spec.csv)
+- [`source/loss-state-contract.csv`](../../source/loss-state-contract.csv)
 
 ## Core loop
 
@@ -31,6 +33,12 @@ The game uses this loop:
 
 ```text
 Notice -> Choose -> Act -> Interpret -> Return
+```
+
+The expanded action loop is:
+
+```text
+Prepare -> Venture -> Work -> Survive disruption -> Decide -> Pay the cost -> Return -> Live with the result
 ```
 
 ## Prototype test
@@ -43,3 +51,6 @@ The opening prototype succeeds when:
 - Relational consequences matter more than point totals.
 - The player understands what Mara saw, heard, and concluded.
 - A viewer can identify the task, controls, alternatives, pressure, and feedback from each gameplay frame.
+- Lethal and persistent risks are readable before failure.
+- A hard loss feels attributable rather than random.
+- A safe withdrawal remains a legitimate action.
