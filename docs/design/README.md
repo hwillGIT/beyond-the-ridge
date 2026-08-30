@@ -20,6 +20,13 @@ The playable-vision package defines what the player does and how the world respo
 - [Redemption Windows and Second Roads Bible](REDEMPTION_WINDOWS_AND_SECOND_ROADS_BIBLE.md)
 - [Player Record, Mastery, History, and Legacy Bible](PLAYER_RECORD_MASTERY_HISTORY_AND_LEGACY_BIBLE.md)
 
+## Visual proofs
+
+- [Gameplay interface proofs](../../assets/gameplay-ui/)
+- [Persistence System proofs](../../assets/persistence-system/)
+- [Player Record and Roadbook proofs](../../assets/player-record-ui/)
+- [Player Record production review](../production/PLAYER_RECORD_UI_PROOF_SET.md)
+
 ## Interaction source records
 
 These records support implementation and visual review.
