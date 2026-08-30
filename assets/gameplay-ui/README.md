@@ -2,12 +2,23 @@
 
 This directory contains interaction-focused gameplay previsualization.
 
-The `full-ui` set proves control, task clarity, alternatives, pressure, and feedback for the four most complex systems:
+## Full UI
+
+The `full-ui` set proves control, task clarity, alternatives, pressure, and feedback for four complex systems:
 
 1. Hairline Crack repair.
 2. Suspended Load danger response.
 3. Mercy House care and referral.
 4. Memory Journal evidence review.
+
+## Contextual UI
+
+The `contextual-ui` set proves that lighter interface layers can support live scenes without turning them into cutscenes:
+
+1. Breakfast Pressure.
+2. County Road.
+3. Cedar Gate.
+4. Supper Version.
 
 These images are visual design targets. They do not represent an engine build.
 

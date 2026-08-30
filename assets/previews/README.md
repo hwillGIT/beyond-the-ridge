@@ -9,5 +9,6 @@ These PNG boards replace the former schematic SVG navigation graphics.
 - `encounter-cards.png` presents representative playable encounters.
 - `worldview-cards.png` presents the five worldview lenses.
 - `relationship-state-cards.png` presents representative relationship states.
+- `production-roadmap.png` presents the visual-production sequence from keyframes through youth review.
 
 These boards are visual summaries. They do not override the canonical design bibles, source registers, or accepted decision records.
