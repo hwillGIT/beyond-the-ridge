@@ -64,7 +64,13 @@ The completed loss-state proof set covers:
 
 Three Persistence System visual bibles and two review montages support the same design gate.
 
-The Player Record, Living History, Challenge Board, Journey Score, and Legacy Card remain design specifications.
+Six Player Record UI proofs show score, mastery, Living History, replay, act summary, and campaign legacy.
+
+One overview montage presents the complete Player Record set.
+
+The set proves interface structure.
+
+It does not prove engine usability or gamer satisfaction.
 
 The 90-second trailer and three-minute gameplay preview remain edit specifications.
 
@@ -106,6 +112,8 @@ The public repository contains:
 - Three Persistence System bible PNGs.
 - Four loss-scenario PNGs.
 - Two Persistence System review-montage PNGs.
+- Six Player Record screen PNGs.
+- One Player Record overview PNG.
 - The visual-production roadmap PNG.
 - The gameplay interaction and HUD bible.
 - The control contract.
@@ -118,6 +126,7 @@ The public repository contains:
 - The Player Record contract.
 - The Living History event schema.
 - The Player Record and Gamer Satisfaction prototype addendum.
+- The Player Record UI production review guide.
 - ADR-0009 for layered score, Living History, and Legacy Cards.
 - The revised keyframe UI specification.
 - The 69-card design dataset.
