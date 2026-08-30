@@ -1,0 +1,21 @@
+Feedback Domain,Player-Facing State,Examples,Not Allowed,Primary Display
+Practical condition,"Unsafe; Temporary; Serviceable; Reliable","Temporary axle repair; reliable bearing replacement","Good or evil labels",Task summary
+Verification,"Untested; Partly tested; Confirmed","Load not tested; road test confirmed","Hidden certainty about future failure",Tool panel and task summary
+Safety,"Exposed; Reduced risk; Protected","No gloves; extra cable fitted; machine isolated","Obedience score",Hazard panel
+Time,"Early; On schedule; Delayed","Quarry load missed; storm arrives first","Punitive timer without context",Objective panel
+Resources,"Conserved; Used; Depleted","Fuel; parts; medicine; food","Generic loot rarity as moral value",Inventory and task summary
+Evidence,"Preserved; Altered; Lost","Cable position marked; scene disturbed","Omniscient reconstruction",Journal and known-facts panel
+Repair capability,"Diagnose; Prepare; Perform; Verify","Read wear; stage tools; complete work; test","Generic damage-number upgrade",Capability record
+Fieldcraft capability,"Navigate; Track; Read weather; Ride","Landmark route; trail signs; storm reading; horse handling","Map reveal without a source",Map and capability record
+Care capability,"Triage; Stabilize; Craft; Refer","Check symptoms; stop bleeding; prepare remedy; call clinic","Compassion points",Care panel and capability record
+Research capability,"Locate; Compare; Cite; Revise","Find record; compare accounts; note source; change conclusion","Truth meter",Journal and capability record
+Performance capability,"Rehearse; Time; Project; Ensemble","Practice; cue timing; voice; group coordination","Celebrity score",Capability record
+Voice capability,"Ask; Challenge; Explain; Set boundary","Request reason; dispute claim; present evidence; refuse","Persuasion damage",Dialogue and capability record
+Relationship trust,Qualitative summary,"Abel relies on Mara's diagnosis","Single friendship bar",Relationship record and behavior
+Relationship respect,Qualitative summary,"Eliza values Mara's careful observation","Approval score as morality",Relationship record and behavior
+Relationship fear,Qualitative summary,"Abel expects Mara's independence to threaten order","Villain meter",Relationship record and behavior
+Relationship dependence,Qualitative summary,"Ruth needs Mara's help in Mercy House","Debt points",Relationship record and behavior
+Relationship clarity,Qualitative summary,"Caleb understands why Mara deflected","Mind-reading certainty",Relationship record and behavior
+Evidence confidence,"Supported; Disputed; Incomplete; Unverified; Contradicted; Revised","Two witnesses disagree; physical trace supports one detail","Single objective truth percentage",Journal
+Map and access,"Known route; Source; Access condition","Jonah sketch; Nora direction; county record","Automatic global minimap",Map
+Work mastery,"Precision; Safety; Resourcefulness; Verification, each 0 to 3 marks","Mechanical and traversal challenge review","Scoring faith; loyalty; trauma; medical choice",Optional post-task summary
