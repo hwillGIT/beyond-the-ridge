@@ -63,6 +63,12 @@ The original loss remains canon.
 
 The player must notice what survived, accept a recovery cost, and build another path inside the changed world.
 
+The design now also defines the Living Record.
+
+The Living Record gives the player encounter scores, capability mastery, challenge replays, competing histories, a Journey Score, and a Legacy Card.
+
+It rewards observable skill without reducing belief, family, trauma, education, or vocation to one morality number.
+
 ### Original design questions
 
 These questions shaped the project and remain useful design tests:
@@ -79,6 +85,8 @@ These questions shaped the project and remain useful design tests:
 - What must a visual prototype prove before the project writes gameplay code?
 - How can the player truly lose without making safety or accessibility the wrong choice?
 - How can hope survive a losing ending without erasing its consequence?
+- How can the game reward mastery without scoring human worth?
+- How can each playthrough leave a history worth comparing with another run?
 
 ## Project summary
 
@@ -102,6 +110,10 @@ The Persistence System adds a second question:
 
 > What can you still choose after the road you wanted is gone?
 
+The Living Record adds a third question:
+
+> What did you master, change, lose, and leave behind?
+
 ## Player experience
 
 The game combines grounded action with social interpretation.
@@ -119,10 +131,90 @@ The player can:
 - Suffer persistent injury, asset loss, missed opportunities, and relationship loss.
 - Develop mechanical skill, fieldcraft, observation, persuasion, history, self-direction, and collaboration.
 - Discover selected Redemption Windows and build Second Roads after major loss.
+- Improve encounter marks without rewriting the canon story result.
+- Build a distinct Living History and compare completed runs through Legacy Cards.
 
 The game has no morality bar.
 
 Relationships track trust, respect, fear, loyalty, dependence, and clarity as separate states.
+
+## How the game rewards a player
+
+The game uses several reward layers.
+
+### Encounter mastery
+
+A repair, rescue, route, investigation, performance, or selected care task receives four marks.
+
+Each mark ranges from zero to three.
+
+The total produces a score from zero to twelve and a rank from Unfinished to Masterwork.
+
+The score measures observable craft.
+
+It does not judge Mara's beliefs or personal worth.
+
+### Capability mastery
+
+Repair, Fieldcraft, Care, Research, Performance, and Voice advance through demonstrated practice.
+
+The player earns new verbs, better information, stronger control, cooperative actions, and new work.
+
+The system does not use generic damage-number growth.
+
+### Discovery and completion
+
+The map records how Mara learned a route or place.
+
+The player can pursue landmarks, institutions, hidden observations, endings, feats, and Second Roads.
+
+The game does not reveal an omniscient world map.
+
+### Living History
+
+The Roadbook preserves what Mara saw, heard, concluded, and revised.
+
+It also records household and public accounts.
+
+The player can see how one action changed later work, relationships, access, loss, and reputation.
+
+### Challenge replay
+
+The Canon Mark belongs to the story run.
+
+A separate Challenge Board lets the player improve a Best Mark under new tools, weather, time, load, companion, or HUD conditions.
+
+Replay improves mastery without undoing consequence.
+
+### Journey Score and Legacy Card
+
+An optional act and campaign score summarizes Mastery, Discovery, Record, Stewardship, and Challenges.
+
+It does not score faith, loyalty, trauma, forgiveness, education choice, medical vulnerability, or vocation.
+
+Each completed run creates a Legacy Card that records what the player built, lost, learned, and left unresolved.
+
+## Why it satisfies a gamer
+
+The player has responsive actions to learn rather than only conversations to select.
+
+Preparation, timing, grip, tool choice, route choice, attention, and reaction affect the result.
+
+The player can win a task, fail it, withdraw, suffer a persistent consequence, or lose the run.
+
+The player receives a clear score for craft and a visible history for consequence.
+
+New capabilities change what the player can do.
+
+New routes, institutions, allies, and mysteries change where the player can go.
+
+Challenge replays support personal bests.
+
+Difficulty modes and Iron Ridge permadeath support higher stakes.
+
+Mutually exclusive leads, endings, losses, and Second Roads support replay.
+
+Most importantly, the player's run creates a history that another player may not create.
 
 ## Design principles
 
@@ -135,6 +227,9 @@ Relationships track trust, respect, fear, loyalty, dependence, and clarity as se
 7. **Loss is real.** Injury, death, failed opportunities, and damaged records can persist.
 8. **Persistence is not an undo.** A Second Road preserves the loss and offers another form of agency.
 9. **Safety remains playable.** Leaving, calling for help, de-escalating, and using accessibility options do not close the story.
+10. **Skill receives a score. People do not.** The game rewards craft without ranking belief, trauma, loyalty, or vocation.
+11. **History remains contested.** The record preserves different accounts instead of inventing false certainty.
+12. **Replay does not erase consequence.** Best Marks remain separate from Canon Marks.
 
 ## Current project state
 
@@ -156,6 +251,7 @@ The repository does not contain a playable engine build.
 | Locations and routes | Defined | `packages/fidelity/location-route-memory/` |
 | Action and loss | Defined | `docs/design/ACTION_AND_LOSS_SYSTEMS.md` |
 | Persistence System | Defined | `packages/persistence/` |
+| Player Record and Living History | Defined | `packages/player-record/` |
 | Trailer and animatic | Planned | `packages/previsualization/` |
 | Engine prototype | Not started | See `ROADMAP.md` |
 
@@ -175,6 +271,7 @@ See [STATUS.md](STATUS.md) for scope limits and evidence.
 8. View the [relationship-state cards](assets/previews/relationship-state-cards.png).
 9. View the [gameplay keyframes](assets/previews/storyboard-overview.png).
 10. Read the [Persistence System Bible](docs/design/REDEMPTION_WINDOWS_AND_SECOND_ROADS_BIBLE.md).
+11. Read the [Player Record, Mastery, History, and Legacy Bible](docs/design/PLAYER_RECORD_MASTERY_HISTORY_AND_LEGACY_BIBLE.md).
 
 ### Design review
 
@@ -184,7 +281,8 @@ See [STATUS.md](STATUS.md) for scope limits and evidence.
 4. Review the opening vertical-slice index.
 5. Review Action and Loss Systems.
 6. Review Redemption Windows and Second Roads.
-7. Record a durable design conflict in an architecture decision record.
+7. Review Player Record, Mastery, Living History, and Legacy.
+8. Record a durable design conflict in an architecture decision record.
 
 ### Source-fidelity review
 
@@ -201,6 +299,8 @@ See [STATUS.md](STATUS.md) for scope limits and evidence.
 4. Test each sequence against the vertical-slice success criteria.
 5. Test loss-state frames for hazard readability and attributable failure.
 6. Test Redemption Windows for causality, accessibility, and persistence integrity.
+7. Test encounter marks for fairness and clarity.
+8. Test the Roadbook for mastery pull, history legibility, and replay interest.
 
 ## Repository map
 
@@ -225,7 +325,7 @@ The project borrows thematic and environmental material from *Educated*.
 
 Recognizable anchors include the mountain, family labor, salvage work, herbal care, religious interpretation, performance, education, and contested memory.
 
-Names, mission plots, player choices, character biographies, dialogue, game outcomes, loss systems, and Redemption Windows are original project material unless a source note states otherwise.
+Names, mission plots, player choices, character biographies, dialogue, game outcomes, loss systems, Redemption Windows, scores, and player-record systems are original project material unless a source note states otherwise.
 
 The source register uses four labels:
 
@@ -249,6 +349,8 @@ Do not convert trauma into a reward loop, collectible, spectacle, or boss fight.
 Do not treat rural people or religious people as visual shorthand for ignorance or danger.
 
 Do not require Mara to restore an abusive relationship to unlock a Second Road.
+
+Do not award points for causing preventable harm or remaining in danger.
 
 See [RIGHTS_AND_USE.md](RIGHTS_AND_USE.md) for the full boundary.
 
@@ -278,4 +380,4 @@ Link each change to a source, design principle, test, or decision record.
 
 Hubert Williams directs the concept and repository scope.
 
-The project uses separate reviews for design, source fidelity, accessibility, faith representation, content care, loss fairness, persistence integrity, and rights.
+The project uses separate reviews for design, source fidelity, accessibility, faith representation, content care, loss fairness, persistence integrity, score fairness, history legibility, gamer satisfaction, and rights.
