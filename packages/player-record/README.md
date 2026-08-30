@@ -14,6 +14,13 @@ The system gives the player clear performance feedback without reducing human ch
 - [`docs/decisions/ADR-0009-layered-score-living-history-and-legacy.md`](../../docs/decisions/ADR-0009-layered-score-living-history-and-legacy.md)
 - [`docs/prototype/PLAYER_RECORD_AND_GAMER_SATISFACTION_PROTOTYPE_ADDENDUM.md`](../../docs/prototype/PLAYER_RECORD_AND_GAMER_SATISFACTION_PROTOTYPE_ADDENDUM.md)
 
+## Visual proof
+
+- [Player Record UI proof set](../../assets/player-record-ui/)
+- [Production review guide](../../docs/production/PLAYER_RECORD_UI_PROOF_SET.md)
+
+The set includes an encounter scorecard, mastery screen, Living History entry, Challenge Board, Journey Score, and Legacy Card.
+
 ## Stable rules
 
 - Score observable craft, not belief or personal worth.
