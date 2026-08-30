@@ -12,3 +12,4 @@ An architecture decision record states one durable design choice and its consequ
 - [ADR-0006: Trauma-sensitive progression](ADR-0006-trauma-sensitive-progression.md)
 - [ADR-0007: Meaningful loss without punishing safety](ADR-0007-meaningful-loss-without-punishing-safety.md)
 - [ADR-0008: Persistence System and hidden Second Roads](ADR-0008-persistence-system-hidden-second-roads.md)
+- [ADR-0009: Layered score, Living History, and Legacy Card](ADR-0009-layered-score-living-history-and-legacy.md)
