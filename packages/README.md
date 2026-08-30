@@ -8,6 +8,8 @@ This directory contains the editable design sources and their review exports.
 - `playable-vision/` defines chapter transformation, gameplay systems, and the opening slice.
 - `fidelity/` defines dialogue, memory, locations, routes, and small details.
 - `previsualization/` defines the trailer and gameplay animatic.
+- `card-library/` defines the modular design-card dataset.
+- `persistence/` defines Redemption Windows, Second Roads, and the Persistence System review path.
 
 ## Source rule
 
