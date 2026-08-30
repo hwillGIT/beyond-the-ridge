@@ -1,0 +1,13 @@
+gate,target,pass_threshold,participant_prompt,observer_signal,action_if_failed
+Hook,"Player wants to know what happens next within five minutes",80%,"What are you curious about right now?","Names a danger, person, place, or unanswered question","Shorten setup and move agency earlier"
+Agency,"Player sees meaningful choice within ten minutes",75%,"What choices felt like they mattered?","Names two actions with different expected results","Make alternatives visible through world state or dialogue"
+Activity Clarity,"Player understands the main verbs",80%,"What do you actually do in this game?","Names work, exploration, conversation, evidence, or care verbs","Reduce passive viewing and add readable interaction"
+Character Pull,"Player wants more time with at least two characters",70%,"Who do you want to understand better? Why?","Names two characters for different reasons","Add contradiction, competence, humor, vulnerability, or unresolved need"
+Place Pull,"Player wants to revisit and explore",70%,"Where would you go next if play continued?","Names one familiar and one unknown place","Strengthen place identity and route curiosity"
+Curiosity,"Player forms an unanswered question",60%,"What are you still wondering about?","Asks an unscripted question","Remove explanation and seed a stronger observable mystery"
+Consequence Legibility,"Player sees action change a situation",75%,"What changed because of what you did?","Names practical or social consequence","Show reaction, access, resource, risk, or relationship change sooner"
+Emotional Range,"Preview has more than tension",70%,"Which moment felt most different from the others?","Mentions warmth, humor, competence, awe, tension, or uncertainty","Add contrast before adding intensity"
+Literary Depth,"Reader recognizes source concerns without direct reenactment",70%,"What felt connected to Educated?","Names theme, place logic, family dynamic, belief, work, or memory","Transform source DNA instead of copying events"
+Non-reader Access,"Non-reader understands immediate stakes",80%,"What is Mara trying to do and why?","Explains the local problem without source knowledge","Move context into action, props, or conversation"
+Youth Respect,"Player feels trusted to infer",75%,"Did the game explain too much or too little?","Says the game lets them notice and decide","Remove thematic explanation and increase observable evidence"
+Continuation Intent,"Player wants to continue immediately",70%,"Would you keep playing right now? Why?","Unprompted reason combines gameplay and story interest","Fix the weakest preceding gate before adding content"
