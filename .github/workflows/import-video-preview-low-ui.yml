@@ -1,0 +1,89 @@
+name: Import video-preview low-UI drafts
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  import-assets:
+    if: contains(github.event.head_commit.message, 'stage video preview low UI import')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download approved low-UI drafts
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/gameplay-ui/low-ui
+
+          download_png() {
+            local url="$1"
+            local path="$2"
+            echo "Downloading ${path}"
+            curl -L --fail --retry 4 --retry-delay 2 --connect-timeout 20 --max-time 240 -o "$path" "$url"
+            file "$path" | grep -q 'PNG image data'
+          }
+
+          download_png 'https://at.adobe.com/DNbH61wuj1tLNuXV' 'assets/gameplay-ui/low-ui/01-ridge-dawn-low-ui-draft.png'
+          download_png 'https://at.adobe.com/KpodHilKHuIyFKQq' 'assets/gameplay-ui/low-ui/10-ridge-signal-low-ui-draft.png'
+          download_png 'https://at.adobe.com/ybHkUS3QoxnFaW0q' 'assets/gameplay-ui/low-ui/11-college-threshold-low-ui-draft.png'
+          download_png 'https://at.adobe.com/PnPJIejEGLVjuTJj' 'assets/gameplay-ui/low-ui/12-wider-world-low-ui-draft.png'
+
+          test "$(find assets/gameplay-ui/low-ui -maxdepth 1 -type f -name '*.png' | wc -l)" -eq 4
+
+      - name: Add low-UI index
+        shell: bash
+        run: |
+          cat > assets/gameplay-ui/low-ui/README.md <<'EOF'
+          # Low-UI Gameplay Review Drafts
+
+          ## Purpose
+
+          These four frames test restrained interface density during exploration and transition scenes.
+
+          They are review drafts. They do not define final interface copy or fictional canon.
+
+          ## Files
+
+          - `01-ridge-dawn-low-ui-draft.png` tests first-look exploration and route discovery.
+          - `10-ridge-signal-low-ui-draft.png` tests weather, exposure, equipment, and route choice.
+          - `11-college-threshold-low-ui-draft.png` tests navigation inside an unfamiliar institution.
+          - `12-wider-world-low-ui-draft.png` tests late-game scale, access, and unresolved direction.
+
+          ## Known corrections
+
+          The Ridge Dawn frame contains temporary names and place labels.
+
+          The Ridge Signal frame contains temporary route names.
+
+          The College Threshold frame contains temporary university branding and copy.
+
+          The Wider World frame contains temporary college and objective copy.
+
+          Correct or replace this generated text before a public trailer or gameplay-preview render.
+
+          ## Canonical sources
+
+          Use these records for final implementation:
+
+          - `docs/design/GAMEPLAY_INTERACTION_AND_HUD_BIBLE.md`
+          - `source/gameplay-keyframe-ui-spec.csv`
+          - `source/control-contract.csv`
+
+          These drafts do not override those sources.
+          EOF
+
+      - name: Commit imported assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/gameplay-ui/low-ui
+          git commit -m 'assets: add four low-UI gameplay review drafts'
+          git push
