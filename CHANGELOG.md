@@ -2,14 +2,42 @@
 
 This file records completed repository changes.
 
+## 2026-08-31
+
+### Added
+
+- Four low-interface gameplay review drafts.
+- A low-interface asset README with required copy corrections.
+- A complete Video Preview Production Package.
+- Active V3 trailer timing.
+- Active V3 gameplay-preview timing.
+- A 55-item video asset manifest.
+- A video deliverable contract.
+- An approved video output directory and README.
+
+### Changed
+
+- The previsualization package now uses repository-native sources.
+- The production index now identifies active V3 edit files.
+- The asset indexes now distinguish approved visuals from review drafts.
+- The status page now identifies the video package as edit-ready.
+- The roadmap now separates completed inputs from remaining render work.
+
+### Confirmed
+
+- No rendered MP4 exists.
+- No finished SRT caption file exists.
+- Low-interface generated copy requires correction before public use.
+- The uploaded memoir remains outside the repository.
+
 ## 2026-08-30
 
 ### Added
 
 - Forty chapter-poster PNG files.
 - Twelve cinematic gameplay keyframes.
-- Four full-UI gameplay proof frames.
-- Four contextual-UI gameplay proof frames.
+- Four full-interface gameplay proof frames.
+- Four contextual-interface gameplay proof frames.
 - A gameplay interaction and HUD bible.
 - Expanded action and loss systems.
 - Encounter defeat, persistent defeat, campaign loss, and optional permadeath rules.
@@ -20,27 +48,29 @@ This file records completed repository changes.
 - A Persistence System prototype addendum.
 - ADR-0008 for hidden Second Roads.
 - A Player Record, Mastery, History, and Legacy Bible.
-- Twelve-mark encounter scores and separate Canon Marks and Best Marks.
-- Capability proofs, tool familiarity, material progression, and map-knowledge states.
-- A Living History that preserves household, public, witness, and player accounts.
-- A Player Record implementation contract and Living History event schema.
-- An optional Journey Score and immutable Legacy Card.
-- A Player Record and Gamer Satisfaction prototype addendum.
+- Twelve-mark encounter scores.
+- Separate Canon Marks and Best Marks.
+- Capability proofs and tool familiarity.
+- Material progression and map-knowledge states.
+- Living History with competing accounts.
+- A Player Record contract.
+- A Living History event schema.
+- An optional Journey Score.
+- An immutable Legacy Card.
+- A Player Record prototype addendum.
 - ADR-0009 for layered score, Living History, and Legacy Cards.
-- Six Player Record and Roadbook UI proof screens.
-- One Player Record UI overview montage.
-- A production review guide for score, mastery, history, replay, Journey Score, and Legacy Card interfaces.
+- Seven Player Record UI proof PNGs.
 
 ## 2026-08-29
 
 ### Added
 
-- Foundation design bibles for the world, characters, and art direction.
+- Foundation design bibles.
 - A 40-chapter adaptation matrix.
 - A gameplay systems bible.
-- A 28-panel opening vertical-slice storyboard.
+- A 28-panel opening storyboard.
 - Dialogue, voice, memory, location, and route bibles.
 - A trailer and gameplay-animatic production bible.
 - An animatic cuebook.
 - Source-fidelity, rights, governance, and contribution guides.
-- Documentation checks based on the `write-timeless-technical-prose` skill.
+- Documentation checks based on the shared writing skill.
