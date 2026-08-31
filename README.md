@@ -252,10 +252,14 @@ The repository does not contain a playable engine build.
 | Action and loss | Defined | `docs/design/ACTION_AND_LOSS_SYSTEMS.md` |
 | Persistence System | Defined | `packages/persistence/` |
 | Player Record and Living History | Defined | `packages/player-record/` |
-| Trailer and animatic | Planned | `packages/previsualization/` |
+| Video previsualization | Edit-ready, not rendered | `packages/previsualization/` |
 | Engine prototype | Not started | See `ROADMAP.md` |
 
 See [STATUS.md](STATUS.md) for scope limits and evidence.
+
+The video package is edit-ready.
+
+The repository does not contain a rendered MP4 file.
 
 ## Review paths
 
@@ -294,7 +298,7 @@ See [STATUS.md](STATUS.md) for scope limits and evidence.
 ### Production review
 
 1. Read the [production index](docs/production/README.md).
-2. Review the cuebook and animatic package index.
+2. Review the [Video Preview Production Package](docs/production/VIDEO_PREVIEW_PRODUCTION_PACKAGE.md).
 3. Confirm character, location, prop, interface, and sound continuity.
 4. Test each sequence against the vertical-slice success criteria.
 5. Test loss-state frames for hazard readability and attributable failure.
@@ -307,6 +311,7 @@ See [STATUS.md](STATUS.md) for scope limits and evidence.
 ```text
 .
 ├── assets/                 Public navigation graphics and approved project visuals
+├── deliverables/           Approved review outputs and companion files
 ├── docs/                   Design guides, decisions, glossary, and traceability
 ├── packages/               Canonical package indexes and approved repository artifacts
 ├── source/                 Concise source records and implementation contracts
