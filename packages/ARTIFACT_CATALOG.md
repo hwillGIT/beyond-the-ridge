@@ -2,35 +2,76 @@
 
 ## Purpose
 
-This catalog separates repository records from large editable design binaries.
+This catalog identifies canonical records, review assets, optional external binaries, and planned outputs.
 
-## Public repository state
+## Repository-first rule
 
-The repository stores documentation, CSV exports, decision records, and navigation graphics in Git history.
+The current workflow uses repository-native Markdown, CSV, and PNG files.
 
-Large presentation and PDF artifacts remain outside Git history until the project configures approved binary storage.
+The video production package does not require a PPTX or PDF file.
 
-## Design artifacts
+An older editable deck can remain an external reference.
 
-| Package | Editable source | Review export | Git state |
+It does not block current design, editing, or review work.
+
+## Foundation and fidelity artifacts
+
+| Artifact | Canonical repository record | Visual or data mirror | State |
 |---|---|---|---|
-| World Bible | `01_Beyond_the_Ridge_World_Bible.pptx` | `01_Beyond_the_Ridge_World_Bible.pdf` | External binary |
-| Character Bible | `02_Beyond_the_Ridge_Character_Bible.pptx` | `02_Beyond_the_Ridge_Character_Bible.pdf` | External binary |
-| Art Bible | `03_Beyond_the_Ridge_Art_Bible.pptx` | `03_Beyond_the_Ridge_Art_Bible.pdf` | External binary |
-| Chapter Adaptation Matrix | `Beyond_the_Ridge_40_Chapter_Adaptation_Matrix.xlsx` | Act CSV exports | CSV mirror in Git |
-| Gameplay Systems Bible | `Beyond_the_Ridge_Gameplay_Systems_Bible_v1.pptx` | Review PDF when exported | External binary |
-| Opening Storyboard | `Beyond_the_Ridge_Opening_Vertical_Slice_Storyboard_v1.pptx` | Review PDF when exported | External binary |
-| Dialogue, Voice, and Memory Bible | `01_Beyond_the_Ridge_Dialogue_Voice_Memory_Bible_v1.pptx` | Matching PDF | External binary |
-| Location, Route, and Place-Memory Bible | `02_Beyond_the_Ridge_Location_Route_Place_Memory_Bible_v1.pptx` | Review PDF when exported | External binary |
-| Trailer and Gameplay Animatic Bible | `Beyond_the_Ridge_Trailer_Gameplay_Animatic_Production_Bible_v1.pptx` | Matching PDF | External binary |
-| Animatic Cuebook | `Beyond_the_Ridge_Animatic_Cuebook_v1.xlsx` | CSV cue sheets | CSV mirror in Git |
+| World Bible | `packages/foundation/01-world-bible/README.md` | Approved review assets | Defined |
+| Character Bible | `packages/foundation/02-character-bible/README.md` | Character boards and references | Defined |
+| Art Bible | `packages/foundation/03-art-bible/README.md` | Keyframes and visual boards | Defined |
+| Chapter Adaptation Matrix | Act CSV files | Forty chapter-poster PNGs | Complete |
+| Gameplay Systems | Package README and design records | System and encounter boards | Defined |
+| Opening Storyboard | Package README and source maps | Cinematic keyframes | Defined |
+| Dialogue and Memory | Fidelity package and CSV records | Selected scene visuals | Defined |
+| Locations and Routes | Fidelity package and CSV records | Location and map boards | Defined |
 
-## Large-file path
+## Gameplay and consequence artifacts
 
-Use Git Large File Storage, GitHub release assets, or approved project storage for large binaries.
+| Artifact | Canonical repository record | Review assets | State |
+|---|---|---|---|
+| Gameplay Interaction | `docs/design/GAMEPLAY_INTERACTION_AND_HUD_BIBLE.md` | Three gameplay-interface families | Defined |
+| Action and Loss | `docs/design/ACTION_AND_LOSS_SYSTEMS.md` | Four loss-scenario PNGs | Defined |
+| Persistence System | `docs/design/REDEMPTION_WINDOWS_AND_SECOND_ROADS_BIBLE.md` | Three bibles and two montages | Defined |
+| Player Record | `docs/design/PLAYER_RECORD_MASTERY_HISTORY_AND_LEGACY_BIBLE.md` | Seven Player Record PNGs | Defined |
 
-Do not add a binary larger than the normal GitHub file limit to Git history.
+## Video previsualization artifacts
+
+| Artifact | Repository path | State |
+|---|---|---|
+| Master package README | `packages/previsualization/README.md` | Complete |
+| Production brief | `docs/production/VIDEO_PREVIEW_PRODUCTION_PACKAGE.md` | Complete |
+| Trailer edit V3 | `packages/previsualization/TRAILER_EDIT_V3.md` | Active |
+| Gameplay preview edit V3 | `packages/previsualization/GAMEPLAY_PREVIEW_EDIT_V3.md` | Active |
+| Video asset manifest | `source/video-asset-manifest.csv` | Complete |
+| Video deliverable contract | `source/video-deliverable-contract.csv` | Complete |
+| Visual source assets | `assets/` | Present |
+| Approved output location | `deliverables/video/README.md` | Defined |
+| 90-second MP4 | `deliverables/video/` | Not rendered |
+| Three-minute MP4 | `deliverables/video/` | Not rendered |
+| SRT captions | `deliverables/video/` | Not created |
+
+## Review-draft rule
+
+Files with `draft` in the name contain unresolved generated content.
+
+The four low-interface drafts require text and branding correction.
+
+They remain useful for layout, density, and pacing review.
+
+## Optional binary rule
+
+Do not add a PPTX or PDF only because an earlier process created one.
+
+Add an optional binary snapshot only when it has a clear review or archival purpose.
+
+Use a tagged release or approved storage when a binary exceeds normal Git limits.
 
 Do not create duplicate snapshot files on the main branch.
 
-Use a tagged release for an approved binary snapshot.
+## Output rule
+
+Do not add empty MP4 or SRT files.
+
+Do not mark a deliverable complete before the real file passes its approval gate.
