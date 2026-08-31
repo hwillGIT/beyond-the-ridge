@@ -1,0 +1,56 @@
+asset_id,asset_family,repository_path,primary_role,concept_trailer,gameplay_preview,canonical_status,required_action
+KF-01,cinematic-keyframe,assets/gameplay-keyframes/01-ridge-dawn.png,"Establish mountain, compound, and first outward question",primary,support,approved-previsualization,Select crop and motion treatment
+KF-02,cinematic-keyframe,assets/gameplay-keyframes/02-breakfast-pressure.png,Establish family pressure and live home interaction,primary,primary,approved-previsualization,Select crop and motion treatment
+KF-03,cinematic-keyframe,assets/gameplay-keyframes/03-hairline-crack.png,Establish repair skill and mechanical doubt,primary,primary,approved-previsualization,Select crop and motion treatment
+KF-04,cinematic-keyframe,assets/gameplay-keyframes/04-suspended-load.png,Establish readable danger and emergency choice,primary,primary,approved-previsualization,Select crop and motion treatment
+KF-05,cinematic-keyframe,assets/gameplay-keyframes/05-mercy-house.png,"Establish care, uncertainty, and outside-help option",primary,primary,approved-previsualization,Select crop and motion treatment
+KF-06,cinematic-keyframe,assets/gameplay-keyframes/06-county-road.png,"Establish driving, conversation, and route pressure",primary,primary,approved-previsualization,Select crop and motion treatment
+KF-07,cinematic-keyframe,assets/gameplay-keyframes/07-cedar-gate.png,Establish specific town life and access,primary,primary,approved-previsualization,Select crop and motion treatment
+KF-08,cinematic-keyframe,assets/gameplay-keyframes/08-supper-version.png,Establish contested memory at home,primary,primary,approved-previsualization,Select crop and motion treatment
+KF-09,cinematic-keyframe,assets/gameplay-keyframes/09-memory-journal.png,Establish evidence and revision mechanic,primary,support,approved-previsualization,Select crop and motion treatment
+KF-10,cinematic-keyframe,assets/gameplay-keyframes/10-ridge-signal.png,"Establish mystery, weather, and new route",primary,primary,approved-previsualization,Select crop and motion treatment
+KF-11,cinematic-keyframe,assets/gameplay-keyframes/11-college-threshold.png,Establish institutional transition,primary,not-used,approved-previsualization,Select crop and motion treatment
+KF-12,cinematic-keyframe,assets/gameplay-keyframes/12-wider-world.png,Establish late-game scale and possibility,primary,not-used,approved-previsualization,Select crop and motion treatment
+UI-F-03,full-interface,assets/gameplay-ui/full-ui/03-hairline-crack-full-ui.png,"Show repair controls, facts, risk, and verification",support,primary,approved-previsualization,Verify visible labels against canonical copy
+UI-F-04,full-interface,assets/gameplay-ui/full-ui/04-suspended-load-full-ui.png,Show emergency actions and readable hazard,support,primary,approved-previsualization,Verify visible labels against canonical copy
+UI-F-05,full-interface,assets/gameplay-ui/full-ui/05-mercy-house-full-ui.png,"Show care actions, symptoms, and referral option",support,primary,approved-previsualization,Verify visible labels against canonical copy
+UI-F-09,full-interface,assets/gameplay-ui/full-ui/09-memory-journal-full-ui.png,"Show Saw, Heard, Concluded, and Revised",support,support,approved-previsualization,Verify visible labels against canonical copy
+UI-C-02,contextual-interface,assets/gameplay-ui/contextual-ui/02-breakfast-pressure-context-ui.png,Show live dialogue intent without freezing the room,support,primary,approved-previsualization,Verify visible labels against canonical copy
+UI-C-06,contextual-interface,assets/gameplay-ui/contextual-ui/06-county-road-context-ui.png,"Show driving, route, and conversation controls",support,primary,approved-previsualization,Verify visible labels against canonical copy
+UI-C-07,contextual-interface,assets/gameplay-ui/contextual-ui/07-cedar-gate-context-ui.png,"Show town navigation, access, and record update",support,primary,approved-previsualization,Verify visible labels against canonical copy
+UI-C-08,contextual-interface,assets/gameplay-ui/contextual-ui/08-supper-version-context-ui.png,Show social intent and consequence without morality points,support,primary,approved-previsualization,Verify visible labels against canonical copy
+UI-L-01,low-interface-draft,assets/gameplay-ui/low-ui/01-ridge-dawn-low-ui-draft.png,Show first-look exploration with restrained interface,primary,primary,review-draft,Replace legacy names and place labels
+UI-L-10,low-interface-draft,assets/gameplay-ui/low-ui/10-ridge-signal-low-ui-draft.png,"Show weather, exposure, equipment, and route choice",primary,primary,review-draft,Replace temporary route names and unreadable text
+UI-L-11,low-interface-draft,assets/gameplay-ui/low-ui/11-college-threshold-low-ui-draft.png,Show unfamiliar institutional navigation,primary,not-used,review-draft,Remove direct university branding and replace temporary copy
+UI-L-12,low-interface-draft,assets/gameplay-ui/low-ui/12-wider-world-low-ui-draft.png,"Show late-game scale, access, and unresolved direction",primary,not-used,review-draft,"Replace temporary college, professor, and objective copy"
+LOSS-01,loss-scenario,assets/persistence-system/loss-scenarios/01-engine-load-imbalance.png,"Show load instability, control pressure, and asset risk",primary,not-used,approved-previsualization,Use only after the decision pressure is readable
+LOSS-02,loss-scenario,assets/persistence-system/loss-scenarios/02-rain-road-crash.png,"Show traction loss, speed pressure, and crash risk",primary,not-used,approved-previsualization,Use only after the decision pressure is readable
+LOSS-03,loss-scenario,assets/persistence-system/loss-scenarios/03-ridge-exposure.png,"Show cold, fatigue, route choice, and turn-back action",primary,not-used,approved-previsualization,Use only after the decision pressure is readable
+LOSS-04,loss-scenario,assets/persistence-system/loss-scenarios/04-wrong-accusation-consequence.png,Show public consequence and preserved-record seed,primary,not-used,approved-previsualization,Use only after the decision pressure is readable
+PR-00,player-record-ui,assets/player-record-ui/00-player-record-ui-overview.png,Review the complete Player Record screen family,reference,reference,approved-previsualization,Crop to the assigned V3 insert
+PR-01,player-record-ui,assets/player-record-ui/01-encounter-scorecard.png,"Show craft marks, Canon Mark, and practical outcome",primary,primary,approved-previsualization,Crop to the assigned V3 insert
+PR-02,player-record-ui,assets/player-record-ui/02-mastery-roadbook.png,Show capability tiers and mastery proofs,reference,not-used,approved-previsualization,Crop to the assigned V3 insert
+PR-03,player-record-ui,assets/player-record-ui/03-living-history-entry.png,"Show competing accounts, revision, and consequence",primary,primary,approved-previsualization,Crop to the assigned V3 insert
+PR-04,player-record-ui,assets/player-record-ui/04-challenge-board.png,"Show Canon Mark, Best Mark, and replay condition",support,primary,approved-previsualization,Crop to the assigned V3 insert
+PR-05,player-record-ui,assets/player-record-ui/05-journey-score.png,Show optional act-level score,reference,not-used,approved-previsualization,Crop to the assigned V3 insert
+PR-06,player-record-ui,assets/player-record-ui/06-legacy-card.png,"Show run summary, loss, knowledge, and possibility",primary,not-used,approved-previsualization,Crop to the assigned V3 insert
+MOTION-00,motion-study,assets/motion-studies/00-mara-vale-character-reference.png,Lock Mara continuity,reference,reference,production-reference,"Use as motion direction, not direct engine proof"
+MOTION-01,motion-study,assets/motion-studies/01-axle-inspection.png,"Guide hand, tool, and camera motion",reference,reference,production-reference,"Use as motion direction, not direct engine proof"
+MOTION-02,motion-study,assets/motion-studies/02-emergency-stop.png,Guide emergency action and timing,reference,reference,production-reference,"Use as motion direction, not direct engine proof"
+MOTION-03,motion-study,assets/motion-studies/03-drive-and-talk.png,Guide driving and conversation overlap,reference,reference,production-reference,"Use as motion direction, not direct engine proof"
+MOTION-04,motion-study,assets/motion-studies/04-cedar-gate-navigation.png,Guide town movement and camera direction,reference,reference,production-reference,"Use as motion direction, not direct engine proof"
+MOTION-05,motion-study,assets/motion-studies/05-evidence-journal.png,Guide journal transition and hand motion,reference,reference,production-reference,"Use as motion direction, not direct engine proof"
+MOTION-06,motion-study,assets/motion-studies/06-college-threshold.png,Guide arrival and institutional transition,reference,reference,production-reference,"Use as motion direction, not direct engine proof"
+PERSIST-00,persistence-bible,assets/persistence-system/bibles/00-primary-persistence-system-bible.png,Summarize Redemption Window and Second Road grammar,reference,reference,review-reference,Do not use as direct trailer footage
+PERSIST-01,persistence-bible,assets/persistence-system/bibles/01-detailed-persistence-system-bible.png,"Review eligibility, seeds, and recovery cost",reference,reference,review-reference,Do not use as direct trailer footage
+PERSIST-02,persistence-bible,assets/persistence-system/bibles/02-two-page-persistence-system-bible.png,Review loss scenarios and persistence flow,reference,reference,review-reference,Do not use as direct trailer footage
+PERSIST-R-01,persistence-review,assets/persistence-system/reviews/slide-montage.png,Review slide sequence and visual coverage,reference,reference,review-reference,Do not use as direct trailer footage
+PERSIST-R-02,persistence-review,assets/persistence-system/reviews/pdf-montage.png,Review page sequence and visual coverage,reference,reference,review-reference,Do not use as direct trailer footage
+BOARD-01,design-board,assets/previews/character-cards.png,Review cast and visual identity,reference,reference,review-reference,Do not use as direct trailer footage
+BOARD-02,design-board,assets/previews/encounter-cards.png,Review encounter structure and choice,reference,reference,review-reference,Do not use as direct trailer footage
+BOARD-03,design-board,assets/previews/production-roadmap.png,Review production order,reference,reference,review-reference,Do not use as direct trailer footage
+BOARD-04,design-board,assets/previews/relationship-state-cards.png,Review multi-axis relationship state,reference,reference,review-reference,Do not use as direct trailer footage
+BOARD-05,design-board,assets/previews/storyboard-overview.png,Review keyframe sequence,reference,reference,review-reference,Do not use as direct trailer footage
+BOARD-06,design-board,assets/previews/systems-overview.png,Review core gameplay systems,reference,reference,review-reference,Do not use as direct trailer footage
+BOARD-07,design-board,assets/previews/world-overview.png,Review locations and routes,reference,reference,review-reference,Do not use as direct trailer footage
+BOARD-08,design-board,assets/previews/worldview-cards.png,Review worldview differences,reference,reference,review-reference,Do not use as direct trailer footage
