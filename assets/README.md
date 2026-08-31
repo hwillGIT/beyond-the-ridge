@@ -1,34 +1,76 @@
-# Assets
+# Visual Assets
 
 ## Purpose
 
-This directory contains approved project visuals and visual navigation aids.
+This directory contains approved project visuals and review drafts.
 
-## Directories
+Each subdirectory states whether its files are approved previsualization, review reference, or generated draft material.
 
-- `chapter-posters/` contains one PNG study poster for each numbered chapter of *Educated*.
-- `gameplay-keyframes/` contains 12 cinematic visual-development frames.
-- `gameplay-ui/full-ui/` contains four interaction-dense gameplay proof frames.
-- `gameplay-ui/contextual-ui/` contains four lighter interface proof frames.
-- `persistence-system/` contains Redemption Windows bibles, review montages, and four loss-scenario concept frames.
-- `player-record-ui/` contains six Roadbook interface proofs and one overview montage.
-- `motion-studies/` contains previsualization motion tests and their indexes.
-- `previews/` contains card boards, overview boards, and the production-roadmap image.
+No image in this directory proves engine behavior.
 
-## Asset rule
+## Directory map
 
-A preview is not a canonical design source.
+| Directory | Contents | Status |
+|---|---|---|
+| [`chapter-posters/`](chapter-posters/) | One PNG study poster for each memoir chapter | Source-study reference |
+| [`gameplay-keyframes/`](gameplay-keyframes/) | Twelve cinematic visual-development frames | Approved previsualization |
+| [`gameplay-ui/full-ui/`](gameplay-ui/full-ui/) | Four interaction-dense gameplay frames | Approved previsualization |
+| [`gameplay-ui/contextual-ui/`](gameplay-ui/contextual-ui/) | Four lighter gameplay frames | Approved previsualization |
+| [`gameplay-ui/low-ui/`](gameplay-ui/low-ui/) | Four exploration and transition frames | Review drafts |
+| [`persistence-system/`](persistence-system/) | System bibles, loss scenarios, and review montages | Approved previsualization |
+| [`player-record-ui/`](player-record-ui/) | Score, mastery, history, replay, and legacy screens | Approved previsualization |
+| [`motion-studies/`](motion-studies/) | Camera, action, and transition references | Production reference |
+| [`previews/`](previews/) | Card boards, overviews, and roadmap images | Review reference |
 
-Use the editable deck, spreadsheet, source record, or accepted decision for a design change.
+## Source-of-truth rule
 
-The gameplay, loss, and Player Record frames are previsualization targets.
+A preview image is not a canonical design source.
 
-They do not represent a working engine build.
+Use an accepted decision, design bible, source contract, or active production specification for implementation.
 
-Generated interface wording does not override canonical implementation copy.
+Generated interface text does not override canonical terminology.
+
+## Draft rule
+
+A filename that contains `draft` identifies unresolved generated content.
+
+Review draft content can include:
+
+- temporary names,
+- temporary places,
+- direct institutional branding,
+- unreadable text,
+- or unapproved interface labels.
+
+Correct those items before public release.
+
+## Video production
+
+The video package uses a controlled subset of these assets.
+
+See:
+
+- [`packages/previsualization/README.md`](../packages/previsualization/README.md)
+- [`VIDEO_PREVIEW_PRODUCTION_PACKAGE.md`](../docs/production/VIDEO_PREVIEW_PRODUCTION_PACKAGE.md)
+- [`video-asset-manifest.csv`](../source/video-asset-manifest.csv)
+
+## Asset acceptance
+
+An approved visual should preserve:
+
+- character continuity,
+- place continuity,
+- era continuity,
+- readable action,
+- readable risk,
+- visible consequence,
+- accessible contrast,
+- and transformed source influence.
 
 ## Rights rule
 
-Do not add publisher cover art or scanned book pages.
+Do not add the uploaded memoir.
 
-Keep direct protected source images outside the public repository.
+Do not add page scans, publisher art, audiobook material, or protected source photographs.
+
+Keep direct protected source media outside the public repository.
