@@ -1,10 +1,12 @@
-# Source Register
+# Source Register and Implementation Contracts
 
 ## Purpose
 
-This directory records source relationships and implementation contracts without storing protected source copies.
+This directory records source relationships and implementation contracts.
 
-## Primary source
+It does not store protected source copies.
+
+## Primary literary source
 
 Tara Westover, *Educated: A Memoir*. Random House, 2018.
 
@@ -20,58 +22,79 @@ Use chapter references and concise detail notes.
 
 | File | Purpose |
 |---|---|
-| `source-register.csv` | High-level source-to-game relationships |
-| `canon.csv` | Canonical fictional cast and source influences |
-| `forms-of-address.csv` | Pet names, kinship names, public labels, and state changes |
-| `voice-profiles-family.csv` | Family speech registers and conversation rules |
-| `voice-profiles-world.csv` | Town, mentor, faith, civic, peer, and contractor speech registers |
-| `memory-triggers-01-18.csv` | Early and middle-game memory anchors |
-| `memory-triggers-19-36.csv` | Later memory anchors and educational place memory |
-| `locations-01-29.csv` | Mountain, family, town, work, and early academic places |
-| `locations-30-58.csv` | Regional, college, Cambridge, Harvard, Rome, and Jordan places |
-| `objects-01-21.csv` | Home, work, care, survival, and family-history objects |
-| `objects-22-41.csv` | Performance, academic, travel, safety, and late-game objects |
-| `opening-source-map-01-14.csv` | Source details for opening beats 1 through 14 |
-| `opening-source-map-15-28.csv` | Source details for opening beats 15 through 28 |
-| `usage-rules.csv` | Rules for source use, transformation, dialogue, and review |
+| `source-register.csv` | Record high-level source relationships |
+| `canon.csv` | Record the fictional cast and source influences |
+| `forms-of-address.csv` | Record pet names, kinship names, and state changes |
+| `voice-profiles-family.csv` | Define family speech registers |
+| `voice-profiles-world.csv` | Define town, mentor, faith, civic, and peer speech |
+| `memory-triggers-01-18.csv` | Record early and middle memory anchors |
+| `memory-triggers-19-36.csv` | Record later memory and educational anchors |
+| `locations-01-29.csv` | Record mountain, family, town, work, and early academic places |
+| `locations-30-58.csv` | Record regional, college, Cambridge, Harvard, Rome, and Jordan places |
+| `objects-01-21.csv` | Record home, work, care, survival, and history objects |
+| `objects-22-41.csv` | Record performance, academic, travel, safety, and late-game objects |
+| `opening-source-map-01-14.csv` | Map source details to opening beats 1 through 14 |
+| `opening-source-map-15-28.csv` | Map source details to opening beats 15 through 28 |
+| `usage-rules.csv` | Define transformation, dialogue, and review rules |
 
 ## Gameplay implementation records
 
 | File | Purpose |
 |---|---|
-| `control-contract.csv` | Stable controller and keyboard meanings |
-| `gameplay-feedback-contract.csv` | Practical, capability, evidence, relationship, and work-mastery feedback |
-| `gameplay-keyframe-ui-spec.csv` | Required controls, pressure, alternatives, and feedback for each keyframe |
-| `loss-state-contract.csv` | Encounter defeat, persistent defeat, campaign loss, and difficulty behavior |
-| `redemption-window-ledger.csv` | Twenty-four Redemption Seeds, activation rules, costs, losses, and Second Roads |
-| `player-record-contract.csv` | Score, mastery, map, relationship, archive, and Legacy Card behavior |
-| `living-history-event-schema.csv` | Event fields for competing accounts, causality, loss, branches, and endings |
+| `control-contract.csv` | Define stable controller and keyboard meanings |
+| `gameplay-feedback-contract.csv` | Define practical, capability, evidence, and relationship feedback |
+| `gameplay-keyframe-ui-spec.csv` | Define required controls and feedback for each keyframe |
+| `loss-state-contract.csv` | Define defeat, persistent loss, campaign loss, and difficulty |
+| `redemption-window-ledger.csv` | Define Redemption Seeds, activation, cost, and Second Roads |
+| `player-record-contract.csv` | Define score, mastery, map, replay, archive, and Legacy Card behavior |
+| `living-history-event-schema.csv` | Define competing accounts, causality, branches, loss, and endings |
+| `video-asset-manifest.csv` | Record every active video-production asset and required correction |
+| `video-deliverable-contract.csv` | Define output names, state, duration, format, captions, and approval gates |
 
-## Register fields
+## Source record fields
 
 A source record can identify:
 
-- A source identifier.
-- A chapter or section.
-- A detail category.
-- A concise source note.
-- A game transformation.
-- A rights class.
-- A review state.
+- source identifier,
+- chapter or section,
+- detail category,
+- concise source note,
+- game transformation,
+- rights class,
+- and review state.
+
+## Implementation record fields
 
 An implementation record can identify:
 
-- An input or state.
-- A player-facing result.
-- A hidden system rule.
-- An accessibility requirement.
-- A persistent consequence.
-- A review or test condition.
+- input or state,
+- player-facing result,
+- hidden system rule,
+- accessibility requirement,
+- persistent consequence,
+- production use,
+- and review condition.
 
-## Use rule
+## Video record use
 
-Treat source records as adaptation notes, not as substitute copies of the memoir.
+Use `video-asset-manifest.csv` before picture editing.
 
-Write original game dialogue and original mission structure.
+The manifest distinguishes approved previsualization from review drafts.
 
-Treat implementation records as design contracts until an engine prototype validates or revises them.
+Use `video-deliverable-contract.csv` before rendering.
+
+The contract records both planned MP4 files as `not-rendered`.
+
+Do not change that state until a real media file passes review.
+
+## Authority rule
+
+Treat source records as adaptation notes.
+
+Do not treat them as substitute copies of the memoir.
+
+Write original dialogue and original mission structure.
+
+Treat implementation records as design contracts until a playable prototype validates or revises them.
+
+Generated image text never overrides a source contract.
