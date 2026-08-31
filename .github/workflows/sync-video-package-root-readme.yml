@@ -1,0 +1,61 @@
+name: Sync root README with video package
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  sync-readme:
+    if: contains(github.event.head_commit.message, 'stage root README video package sync')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Apply video package updates
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('README.md')
+          text = path.read_text(encoding='utf-8')
+
+          replacements = [
+              (
+                  '| Trailer and animatic | Planned | `packages/previsualization/` |',
+                  '| Video previsualization | Edit-ready, not rendered | `packages/previsualization/` |',
+              ),
+              (
+                  'See [STATUS.md](STATUS.md) for scope limits and evidence.',
+                  'See [STATUS.md](STATUS.md) for scope limits and evidence.\n\nThe video package is edit-ready.\n\nThe repository does not contain a rendered MP4 file.',
+              ),
+              (
+                  '1. Read the [production index](docs/production/README.md).\n2. Review the cuebook and animatic package index.',
+                  '1. Read the [production index](docs/production/README.md).\n2. Review the [Video Preview Production Package](docs/production/VIDEO_PREVIEW_PRODUCTION_PACKAGE.md).',
+              ),
+              (
+                  '├── assets/                 Public navigation graphics and approved project visuals\n├── docs/',
+                  '├── assets/                 Public navigation graphics and approved project visuals\n├── deliverables/           Approved review outputs and companion files\n├── docs/',
+              ),
+          ]
+
+          for old, new in replacements:
+              if old not in text:
+                  raise SystemExit(f'Expected README text not found: {old}')
+              text = text.replace(old, new, 1)
+
+          path.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Commit README update
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m 'docs: link the edit-ready video production package'
+          git push
