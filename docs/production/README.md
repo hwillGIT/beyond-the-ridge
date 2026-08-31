@@ -1,74 +1,116 @@
 # Production Index
 
-## Previsualization package
+## Purpose
 
-The previsualization package defines two videos:
+This directory converts the game design into reviewable production evidence.
 
-- A 90-second concept trailer.
-- A three-minute over-the-shoulder gameplay preview.
+It covers still images, motion studies, trailer timing, gameplay-preview timing, interface inserts, sound, captions, and review gates.
 
-See the [previsualization package](../../packages/previsualization/README.md).
+## Video package
 
-The edit specifications, shot lists, dialogue, sound cues, and interface cues are in the repository.
+Start with the [Video Preview Production Package](VIDEO_PREVIEW_PRODUCTION_PACKAGE.md).
 
-The rendered MP4 files do not exist yet.
+The active package defines two videos:
+
+- a 90-second concept trailer,
+- and a three-minute gameplay preview.
+
+The repository contains all current production inputs.
+
+The repository does not contain a rendered MP4 file.
+
+## Active edit specifications
+
+Use:
+
+- [`TRAILER_EDIT_V3.md`](../../packages/previsualization/TRAILER_EDIT_V3.md)
+- [`GAMEPLAY_PREVIEW_EDIT_V3.md`](../../packages/previsualization/GAMEPLAY_PREVIEW_EDIT_V3.md)
+
+The V2 edit files remain as historical references.
 
 ## Published visual assets
 
-The repository includes these approved PNG sets:
+The repository includes these PNG sets:
 
-- [Production roadmap](../../assets/previews/production-roadmap.png).
-- [Twelve cinematic keyframes](../../assets/gameplay-keyframes/).
-- [Four full-UI gameplay frames](../../assets/gameplay-ui/full-ui/).
-- [Four contextual-UI gameplay frames](../../assets/gameplay-ui/contextual-ui/).
-- [Persistence System visual bibles and loss scenarios](../../assets/persistence-system/).
-- [Player Record and Roadbook UI proof set](../../assets/player-record-ui/).
-- [Character card board](../../assets/previews/character-cards.png).
-- [Encounter card board](../../assets/previews/encounter-cards.png).
-- [Worldview card board](../../assets/previews/worldview-cards.png).
-- [Relationship-state card board](../../assets/previews/relationship-state-cards.png).
-- [System card board](../../assets/previews/systems-overview.png).
-- [Location card board](../../assets/previews/world-overview.png).
+- [Production roadmap](../../assets/previews/production-roadmap.png)
+- [Twelve cinematic keyframes](../../assets/gameplay-keyframes/)
+- [Four full-interface gameplay frames](../../assets/gameplay-ui/full-ui/)
+- [Four contextual-interface gameplay frames](../../assets/gameplay-ui/contextual-ui/)
+- [Four low-interface review drafts](../../assets/gameplay-ui/low-ui/)
+- [Persistence System visuals and loss scenarios](../../assets/persistence-system/)
+- [Player Record and Roadbook screens](../../assets/player-record-ui/)
+- [Motion studies](../../assets/motion-studies/)
+- [Game-design boards](../../assets/previews/)
 
-The cinematic keyframes establish tone and continuity.
+## Production records
 
-The gameplay frames establish task clarity, available actions, pressure, known information, and consequence feedback.
+Use:
 
-The Player Record set establishes score, mastery, replay, history, act summary, and campaign legacy.
+- [`video-asset-manifest.csv`](../../source/video-asset-manifest.csv)
+- [`video-deliverable-contract.csv`](../../source/video-deliverable-contract.csv)
+- [`trailer-shots.csv`](../../packages/previsualization/trailer-shots.csv)
+- [`gameplay-sequences.csv`](../../packages/previsualization/gameplay-sequences.csv)
+- [`dialogue-and-vo.csv`](../../packages/previsualization/dialogue-and-vo.csv)
+- [`sound-cues.csv`](../../packages/previsualization/sound-cues.csv)
+- [`ui-overlays.csv`](../../packages/previsualization/ui-overlays.csv)
 
-Four low-UI proof frames remain for Ridge Dawn, Ridge Signal, College Threshold, and Wider World.
+## Supporting specifications
 
-## Player Record UI proof
+- [Visual Proof of Play](VISUAL_PROOF_OF_PLAY.md)
+- [Motion Study Specifications](MOTION_STUDY_SPECS.md)
+- [Player Record UI Proof Set](PLAYER_RECORD_UI_PROOF_SET.md)
+- [Trailer Animatic Cut](TRAILER_90S_ANIMATIC_CUT.md)
+- [Gameplay Animatic Cut](GAMEPLAY_3MIN_ANIMATIC_CUT.md)
 
-The [Player Record UI proof set](PLAYER_RECORD_UI_PROOF_SET.md) defines the review purpose for all six screens.
+The older animatic cuts remain useful for comparison.
 
-The set includes:
+The active V3 edits control the next render.
 
-1. Encounter scorecard.
-2. Capability mastery.
-3. Living History.
-4. Challenge Board.
-5. Journey Score.
-6. Legacy Card.
+## Asset roles
+
+Cinematic keyframes establish tone and continuity.
+
+Gameplay interface frames establish action and choice.
+
+Loss scenarios establish credible defeat and persistent consequence.
+
+Player Record screens establish score, history, replay, and legacy.
+
+Motion studies establish camera and action direction.
+
+Low-interface drafts establish exploration and transition density.
+
+## Low-interface draft boundary
+
+The low-interface images contain temporary generated copy.
+
+The College Threshold image contains direct university branding.
+
+The other drafts contain temporary names, places, routes, or objectives.
+
+Correct these items before a public video render.
 
 ## Visual continuity
 
-Each frame must preserve:
+Each selected frame must preserve:
 
-- Mara's face, age, hair, clothing, and physical build.
-- Abel's build, work clothing, glasses, cap, and hand condition.
-- Ruth's age, hair, work surfaces, and care tools.
-- The compound layout and mountain orientation.
-- Era-correct vehicles, tools, signs, and buildings.
-- Natural light, readable hazards, and visible hands during work.
+- Mara’s face, age, hair, clothing, and build,
+- Abel’s build, clothing, glasses, cap, and hand condition,
+- Ruth’s age, hair, work surfaces, and care tools,
+- the compound layout and mountain orientation,
+- era-correct vehicles, tools, signs, and buildings,
+- readable hazards,
+- and visible hands during work.
 
 ## Sound continuity
 
-Use wind, metal, engines, chain strain, radio static, house settling, boots, and source music.
+Use wind, metal, engines, chain strain, radio static, house settling, tires, boots, paper, and public-room tone.
+
+Let sound reveal danger before an interface alert.
 
 Do not score every emotion.
 
-Do not assign a villain theme to faith.
+Do not assign a villain theme to faith or rural life.
 
 ## Interface continuity
 
@@ -76,15 +118,27 @@ Use active verbs for objectives.
 
 Show present intent and known risk.
 
-Show the player's available action before showing a consequence.
+Show the player’s action before showing its consequence.
 
-Do not display a morality bar or relationship hearts.
+Keep Canon Marks separate from Best Marks.
 
-Relationship feedback must describe trust, respect, fear, dependence, and clarity as separate states.
+Do not display a morality bar.
+
+Do not display relationship hearts.
+
+Use trust, respect, fear, dependence, and clarity as separate relationship states.
+
+## Output location
+
+Approved renders belong in [`deliverables/video/`](../../deliverables/video/).
+
+The directory README defines names, technical properties, captions, and review notes.
+
+Do not add placeholder media.
 
 ## Review gates
 
-The team reviews:
+The production package requires these reviews:
 
 1. Character continuity.
 2. Location continuity.
@@ -92,8 +146,18 @@ The team reviews:
 4. Score fairness.
 5. History legibility.
 6. Replay pull.
-7. Source fidelity.
-8. Content care.
-9. Accessibility.
-10. Youth engagement.
-11. Rights and attribution.
+7. Loss fairness.
+8. Persistence integrity.
+9. Source fidelity.
+10. Content care.
+11. Accessibility.
+12. Youth engagement.
+13. Rights and attribution.
+
+## Completion boundary
+
+The package is edit-ready.
+
+It becomes complete only after both videos and both caption files pass review.
+
+A rendered previsualization video still does not prove engine behavior.
